@@ -48,7 +48,7 @@ def _experiencia(t):
                   r"en total (?:tengo|son|llevo) ((\d+|un|una) años?( y medio)?)",
                   r"(?:ya son|llevo) ((\d+) años?( y medio)?)",
                   r"(?:tengo) ((\d+|un|una) años?( y medio)?)[.,]",
-                  r"(?:tengo|llevo) ((\d+|un|una) años?( y medio)?) (?:de|en) (?:prácticas|trabajo|el área)"], t)
+                  r"(?:tengo|llevo) ((\d+|un|una) años?( y medio)?) (?:de|en) (?:prácticas|trabajo|programación|el área)"], t)
     if not m:
         return _campo(None)
     valor = _cantidad(m[2]) + (0.5 if m[3] else 0)
@@ -57,11 +57,14 @@ def _experiencia(t):
 
 def _puesto(t):
     fin = r"(?= en (?:una|un|la|el)\b|[.,;]|$)"
-    m = _primero([rf"(?:mi )?último puesto fue (?:como )?(?:de )?([^.,;]+?){fin}",
-                  rf"(?:mi )?último trabajo fue (?:como )?([^.,;]+?){fin}",
-                  rf"actualmente soy ([^.,;]+?){fin}",
-                  rf"\bsoy ((?:analista|líder|lider|especialista|jefe|jefa|desarrollador|desarrolladora|practicante|diseñador|diseñadora)[^.,;]*?){fin}"], t)
-    return _campo(m[1].strip(), m[1].strip()) if m else _campo(None)
+    for p in [rf"(?:mi )?último puesto fue (?:como )?(?:de )?([^.,;]+?){fin}",
+              rf"(?:mi )?último trabajo fue (?:como )?([^.,;]+?){fin}",
+              rf"actualmente soy ([^.,;]+?){fin}",
+              rf"\bsoy ((?:analista|líder|lider|especialista|jefe|jefa|desarrollador|desarrolladora|practicante|diseñador|diseñadora)[^.,;]*?){fin}"]:
+        hallados = list(re.finditer(p, t))
+        if hallados:  # si la persona empieza la frase de nuevo, vale la última versión
+            return _campo(hallados[-1][1].strip(), hallados[-1][1].strip())
+    return _campo(None)
 
 
 def _tecnologias(t, vocabulario):
