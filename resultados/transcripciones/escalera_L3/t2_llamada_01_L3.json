@@ -1,0 +1,155 @@
+{
+ "texto": "Y sería Tono, buenas noches, ¿en qué le puedo ayudar? Hola, buenas noches, quería hacer un pedido para Delibre, por favor. Claro que sí, ¿qué bebé le gustaría pedir? Quiero una pizza de pepperoni familiar y una pepperoni mediana. ¿Una pepperoni familiar y una pepperoni mediana? ¿Algo más? Ah, espere, ¿te da alguna solución hoy? Sí, tenemos el dúo familiar. Si lleva dos pizzas familiares o más, le descontamos 10 soles. Uh, entonces mejor que hable la mediana por otro familiar, que sea uno de pepperoni familiar. Perfecto, entonces quedan dos pizzas de pepperoni familiares a 46 soles cada una con el dúo familiar. Una pregunta, ¿la familiar de cuántas tajadas es? Es de 8 tajadas y alcanza bien para 3 o 4 personas. Perfecto, somos 6, así que con 2 es 6. Muy bien, ¿le gustaría algo para tomar? Sí, una gaseosa de litro y medio. Una gaseosa de litro y medio son 9 soles. ¿A qué dirección se le enviamos? A la avenida América Sur 1245, es una casa blanca, al costado de una farmacia. Avenida América Sur 1245, al costado de la farmacia. ¿Cómo va a pagar? Efectivo, voy a pagar su... ¿Voy a pagar su... Voy a pagar con un billete de fin. Muy bien, le llevamos el vuelto. Le confirmo el pedido. Dos pizzas pepperoni familiares, una gaseosa de litro y medio y el descuento del dúo familiar de 10 soles. El total sería 90 y un soles. Perfecto, ¿cuánto demora más o menos? Aproximadamente 40 minutos. Ah, muchas gracias. Gracias a usted, que tenga buena noche.",
+ "segmentos": [
+  {
+   "inicio": 0.69,
+   "fin": 4.33,
+   "texto": "Y sería Tono, buenas noches, ¿en qué le puedo ayudar?"
+  },
+  {
+   "inicio": 6.17,
+   "fin": 9.31,
+   "texto": "Hola, buenas noches, quería hacer un pedido para Delibre, por favor."
+  },
+  {
+   "inicio": 10.03,
+   "fin": 12.01,
+   "texto": "Claro que sí, ¿qué bebé le gustaría pedir?"
+  },
+  {
+   "inicio": 13.79,
+   "fin": 17.03,
+   "texto": "Quiero una pizza de pepperoni familiar y una pepperoni mediana."
+  },
+  {
+   "inicio": 17.81,
+   "fin": 20.97,
+   "texto": "¿Una pepperoni familiar y una pepperoni mediana? ¿Algo más?"
+  },
+  {
+   "inicio": 22.77,
+   "fin": 24.87,
+   "texto": "Ah, espere, ¿te da alguna solución hoy?"
+  },
+  {
+   "inicio": 24.87,
+   "fin": 30.91,
+   "texto": "Sí, tenemos el dúo familiar. Si lleva dos pizzas familiares o más, le descontamos 10 soles."
+  },
+  {
+   "inicio": 33.09,
+   "fin": 37.29,
+   "texto": "Uh, entonces mejor que hable la mediana por otro familiar, que sea uno de pepperoni familiar."
+  },
+  {
+   "inicio": 38.23,
+   "fin": 43.99,
+   "texto": "Perfecto, entonces quedan dos pizzas de pepperoni familiares a 46 soles cada una con el dúo familiar."
+  },
+  {
+   "inicio": 46.51,
+   "fin": 49.17,
+   "texto": "Una pregunta, ¿la familiar de cuántas tajadas es?"
+  },
+  {
+   "inicio": 49.71,
+   "fin": 53.67,
+   "texto": "Es de 8 tajadas y alcanza bien para 3 o 4 personas."
+  },
+  {
+   "inicio": 55.55,
+   "fin": 57.63,
+   "texto": "Perfecto, somos 6, así que con 2 es 6."
+  },
+  {
+   "inicio": 57.65,
+   "fin": 60.01,
+   "texto": "Muy bien, ¿le gustaría algo para tomar?"
+  },
+  {
+   "inicio": 61.71,
+   "fin": 63.71,
+   "texto": "Sí, una gaseosa de litro y medio."
+  },
+  {
+   "inicio": 64.45,
+   "fin": 69.67,
+   "texto": "Una gaseosa de litro y medio son 9 soles. ¿A qué dirección se le enviamos?"
+  },
+  {
+   "inicio": 72.08,
+   "fin": 78.46,
+   "texto": "A la avenida América Sur 1245, es una casa blanca, al costado de una farmacia."
+  },
+  {
+   "inicio": 79.26,
+   "fin": 85.32,
+   "texto": "Avenida América Sur 1245, al costado de la farmacia. ¿Cómo va a pagar?"
+  },
+  {
+   "inicio": 87.12,
+   "fin": 89.0,
+   "texto": "Efectivo, voy a pagar su..."
+  },
+  {
+   "inicio": 89.0,
+   "fin": 89.2,
+   "texto": "¿Voy a pagar su..."
+  },
+  {
+   "inicio": 89.2,
+   "fin": 90.48,
+   "texto": "Voy a pagar con un billete de fin."
+  },
+  {
+   "inicio": 91.06,
+   "fin": 94.72,
+   "texto": "Muy bien, le llevamos el vuelto. Le confirmo el pedido."
+  },
+  {
+   "inicio": 95.2,
+   "fin": 102.14,
+   "texto": "Dos pizzas pepperoni familiares, una gaseosa de litro y medio y el descuento del dúo familiar de 10 soles."
+  },
+  {
+   "inicio": 102.56,
+   "fin": 105.48,
+   "texto": "El total sería 90 y un soles."
+  },
+  {
+   "inicio": 107.85,
+   "fin": 109.67,
+   "texto": "Perfecto, ¿cuánto demora más o menos?"
+  },
+  {
+   "inicio": 110.65,
+   "fin": 112.11,
+   "texto": "Aproximadamente 40 minutos."
+  },
+  {
+   "inicio": 114.65,
+   "fin": 115.57,
+   "texto": "Ah, muchas gracias."
+  },
+  {
+   "inicio": 116.39,
+   "fin": 118.11,
+   "texto": "Gracias a usted, que tenga buena noche."
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4180.0,
+ "segundos": 11.92,
+ "duracion_audio": 120.02,
+ "seg_por_minuto": 5.96,
+ "glosario": "hotwords",
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "escalera_L3",
+ "clip": "t2_llamada_01_L3"
+}

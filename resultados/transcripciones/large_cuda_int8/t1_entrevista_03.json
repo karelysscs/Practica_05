@@ -1,0 +1,130 @@
+{
+ "texto": "Buenos días. Adelante, tome asiento. Esta entrevista es para el puesto de desarrollo FrontEd. Para empezar, ¿cuál fue su último trabajo? Buenos días. Mi último trabajo fue como practicante desde el desarrollo web en una agencia de marketing digital. Terminé las prácticas hace dos semanas. Muy bien. Le voy a hacer una pregunta directa desde ya para no perder el tiempo. ¿Cuánto espera ganar? Bueno, como estoy empezando, mi pretensión es de 2.200 soles al mes. 2.200 soles está dentro del rango. ¿Y cómo está con el inglés? Sinceramente, mi inglés es básico. Entiendo cuando leo, sobre todo los mensajes de error, pero no podría tener una reunión en inglés. Entiendo, básico. Y en total, ¿cuánta experiencia tiene programando? Tengo un año y medio de programación. ¿De pronto? Tengo prácticas profesionales en la agencia. Un año y medio. ¿Y con qué tecnologías ha trabajado? Con JavaScript, sobre todo con React. También manejo HTML y CSS. Y uso JIT para el control de versiones. Perfecto. Cuénteme de algún proyecto. Hice la página web de una cadena de veterinarios. Tenía un formulario para reservar citas y usaban 300 personas. Gracias a ustedes. Muy bien. ¿Y desde cuándo podría comenzar? Podría empezar en un mes, porque estoy terminando un curso que acaba a fin de mes. ¿Un mes, perfecto? ¿Tienen alguna pregunta? Sí. ¿Habría alguien que pille al inicio? Claro, tendría un mentor durante los primeros tres meses. Genial. Muchas gracias. Gracias a usted. Hasta pronto.",
+ "segmentos": [
+  {
+   "inicio": 1.68,
+   "fin": 8.94,
+   "texto": "Buenos días. Adelante, tome asiento. Esta entrevista es para el puesto de desarrollo FrontEd. Para empezar, ¿cuál fue su último trabajo?"
+  },
+  {
+   "inicio": 10.74,
+   "fin": 19.5,
+   "texto": "Buenos días. Mi último trabajo fue como practicante desde el desarrollo web en una agencia de marketing digital. Terminé las prácticas hace dos semanas."
+  },
+  {
+   "inicio": 20.22,
+   "fin": 25.4,
+   "texto": "Muy bien. Le voy a hacer una pregunta directa desde ya para no perder el tiempo. ¿Cuánto espera ganar?"
+  },
+  {
+   "inicio": 25.4,
+   "fin": 31.88,
+   "texto": "Bueno, como estoy empezando, mi pretensión es de 2.200 soles al mes."
+  },
+  {
+   "inicio": 33.34,
+   "fin": 38.36,
+   "texto": "2.200 soles está dentro del rango. ¿Y cómo está con el inglés?"
+  },
+  {
+   "inicio": 40.58,
+   "fin": 49.62,
+   "texto": "Sinceramente, mi inglés es básico. Entiendo cuando leo, sobre todo los mensajes de error, pero no podría tener una reunión en inglés."
+  },
+  {
+   "inicio": 50.14,
+   "fin": 53.72,
+   "texto": "Entiendo, básico. Y en total, ¿cuánta experiencia tiene programando?"
+  },
+  {
+   "inicio": 53.96,
+   "fin": 64.35,
+   "texto": "Tengo un año y medio de programación."
+  },
+  {
+   "inicio": 64.35,
+   "fin": 64.53,
+   "texto": "¿De pronto?"
+  },
+  {
+   "inicio": 64.53,
+   "fin": 66.85,
+   "texto": "Tengo prácticas profesionales en la agencia."
+  },
+  {
+   "inicio": 67.27,
+   "fin": 70.55,
+   "texto": "Un año y medio. ¿Y con qué tecnologías ha trabajado?"
+  },
+  {
+   "inicio": 72.13,
+   "fin": 81.57,
+   "texto": "Con JavaScript, sobre todo con React. También manejo HTML y CSS. Y uso JIT para el control de versiones."
+  },
+  {
+   "inicio": 81.87,
+   "fin": 84.15,
+   "texto": "Perfecto. Cuénteme de algún proyecto."
+  },
+  {
+   "inicio": 84.15,
+   "fin": 95.9,
+   "texto": "Hice la página web de una cadena de veterinarios. Tenía un formulario para reservar citas y usaban 300 personas."
+  },
+  {
+   "inicio": 95.9,
+   "fin": 97.56,
+   "texto": "Gracias a ustedes."
+  },
+  {
+   "inicio": 97.56,
+   "fin": 99.12,
+   "texto": "Muy bien. ¿Y desde cuándo podría comenzar?"
+  },
+  {
+   "inicio": 99.12,
+   "fin": 105.88,
+   "texto": "Podría empezar en un mes, porque estoy terminando un curso que acaba a fin de mes."
+  },
+  {
+   "inicio": 105.9,
+   "fin": 109.48,
+   "texto": "¿Un mes, perfecto? ¿Tienen alguna pregunta?"
+  },
+  {
+   "inicio": 109.56,
+   "fin": 114.21,
+   "texto": "Sí. ¿Habría alguien que pille al inicio?"
+  },
+  {
+   "inicio": 114.21,
+   "fin": 119.83,
+   "texto": "Claro, tendría un mentor durante los primeros tres meses."
+  },
+  {
+   "inicio": 119.83,
+   "fin": 121.87,
+   "texto": "Genial. Muchas gracias."
+  },
+  {
+   "inicio": 121.87,
+   "fin": 124.19,
+   "texto": "Gracias a usted. Hasta pronto."
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "int8_float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 3412.0,
+ "segundos": 30.68,
+ "duracion_audio": 126.14,
+ "seg_por_minuto": 14.59,
+ "glosario": null,
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "large_cuda_int8",
+ "clip": "t1_entrevista_03"
+}

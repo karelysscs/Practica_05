@@ -1,0 +1,110 @@
+{
+ "texto": "Hola, buenos días. Antes de empezar una consulta práctica, si le ofrecemos el puesto, ¿cuándo podría empezar? Buenos días. Necesito cerrar algunos pendientes, así que podría empezar en dos semanas. Dos semanas? Perfecto. ¿Cuántos años de experiencia tienen diseño? Tengo cinco años de experiencia. Los dos primeros fueron de diseño gráfico y los últimos tres en diseño de experiencia de usuario. Muy bien. Este puesto incluye trabajo con equipos de otros países. ¿Qué nivel de inglés tiene? Avanzado. Estudié seis años en el instituto de idiomas y presento mis diseños en inglés casi todas las semanas. Excelente. Hablemos de salario. ¿Cuál es su pretensión? Pido 6.500. No, perdón, me confundí con otra postulación. Mi pretensión es de 6.000 soles. ¿6.000 soles anotado? ¿Qué herramientas usa? Uso Figma para casi todo y antes trabajaba con Adobe. También usó Miro para los talleres como usuarios y se lo básico de HTML para conversar con los desarrolladores. ¿Y cuál fue su último puesto? Mi último puesto fue especialista en experiencia de usuario en una aplicación de delivery. Diseñé el proceso de pago y las compras abandonadas bajaron en un 15%. Muy buen resultado. ¿Tiene alguna pregunta? Sí. ¿Cuántas personas hay en el equipo de diseño? Hay tres en diseño y dos en investigación. Perfecto. Muchas gracias. Gracias a usted. Estaremos en contacto.",
+ "segmentos": [
+  {
+   "inicio": 1.84,
+   "fin": 7.84,
+   "texto": "Hola, buenos días. Antes de empezar una consulta práctica, si le ofrecemos el puesto, ¿cuándo podría empezar?"
+  },
+  {
+   "inicio": 9.84,
+   "fin": 15.84,
+   "texto": "Buenos días. Necesito cerrar algunos pendientes, así que podría empezar en dos semanas."
+  },
+  {
+   "inicio": 16.84,
+   "fin": 20.84,
+   "texto": "Dos semanas? Perfecto. ¿Cuántos años de experiencia tienen diseño?"
+  },
+  {
+   "inicio": 21.84,
+   "fin": 30.84,
+   "texto": "Tengo cinco años de experiencia. Los dos primeros fueron de diseño gráfico y los últimos tres en diseño de experiencia de usuario."
+  },
+  {
+   "inicio": 31.84,
+   "fin": 36.84,
+   "texto": "Muy bien. Este puesto incluye trabajo con equipos de otros países. ¿Qué nivel de inglés tiene?"
+  },
+  {
+   "inicio": 37.84,
+   "fin": 44.84,
+   "texto": "Avanzado. Estudié seis años en el instituto de idiomas y presento mis diseños en inglés casi todas las semanas."
+  },
+  {
+   "inicio": 45.84,
+   "fin": 48.84,
+   "texto": "Excelente. Hablemos de salario. ¿Cuál es su pretensión?"
+  },
+  {
+   "inicio": 50.84,
+   "fin": 60.84,
+   "texto": "Pido 6.500. No, perdón, me confundí con otra postulación. Mi pretensión es de 6.000 soles."
+  },
+  {
+   "inicio": 61.84,
+   "fin": 66.84,
+   "texto": "¿6.000 soles anotado? ¿Qué herramientas usa?"
+  },
+  {
+   "inicio": 67.84,
+   "fin": 82.84,
+   "texto": "Uso Figma para casi todo y antes trabajaba con Adobe. También usó Miro para los talleres como usuarios y se lo básico de HTML para conversar con los desarrolladores."
+  },
+  {
+   "inicio": 83.84,
+   "fin": 85.84,
+   "texto": "¿Y cuál fue su último puesto?"
+  },
+  {
+   "inicio": 86.84,
+   "fin": 93.84,
+   "texto": "Mi último puesto fue especialista en experiencia de usuario en una aplicación de delivery."
+  },
+  {
+   "inicio": 94.84,
+   "fin": 100.84,
+   "texto": "Diseñé el proceso de pago y las compras abandonadas bajaron en un 15%."
+  },
+  {
+   "inicio": 101.84,
+   "fin": 104.84,
+   "texto": "Muy buen resultado. ¿Tiene alguna pregunta?"
+  },
+  {
+   "inicio": 105.84,
+   "fin": 108.84,
+   "texto": "Sí. ¿Cuántas personas hay en el equipo de diseño?"
+  },
+  {
+   "inicio": 109.84,
+   "fin": 114.12,
+   "texto": "Hay tres en diseño y dos en investigación."
+  },
+  {
+   "inicio": 115.12,
+   "fin": 117.12,
+   "texto": "Perfecto. Muchas gracias."
+  },
+  {
+   "inicio": 118.12,
+   "fin": 120.12,
+   "texto": "Gracias a usted. Estaremos en contacto."
+  }
+ ],
+ "modelo": "small",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 852.0,
+ "segundos": 2.96,
+ "duracion_audio": 121.6,
+ "seg_por_minuto": 1.46,
+ "glosario": null,
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "small_cuda_fp16",
+ "clip": "t1_entrevista_04"
+}

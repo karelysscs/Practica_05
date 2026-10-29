@@ -1,0 +1,145 @@
+{
+ "texto": "Pizzería Tono, buenas tardes Buenas tardes, quisiera pedir una pizza para llevar a mi casa Claro, ¿qué pizza desea? ¿Cuál me recomienda? Espero una reunión de cuatro personas Le recomiendo la suprema familiar, lleva pepperoni, jamón, champiñones, pimiento y aceituna, cuesta 52 soles Ya, una suprema familiar entonces Una suprema familiar, ¿algo para acompañar? Sí, dos panes de ajo, por favor Dos panes al ajo, a ocho soles cada uno, ¿y para tomar? Una gaseosa de litro y medio Perfecto, ¿tiene algún cupón de descuento? No, ninguno, ya he pedido antes, así que creo que el de bienvenida no me vale Así es El cupón de bienvenida es solo para el primer pedido ¿Me da la dirección, por favor? Girón Pizarro, 418, departamento 3B, es un edificio de cinco pisos con una puerta verde Girón Pizarro, 418, departamento 3B, ¿cómo desea pagar? Con Yape, por favor Perfecto, el motorizado le muestra el código para que Yape al llegar Le confirmo, una pizza suprema familiar, dos panes al ajo y una gaseosa de litro y medio, serían 72 soles en total ¿72? Perfecto, llega antes de las 7 Sí, en unos 35 minutos estaría llegando Excelente, gracias Gracias a usted Buenas tardes",
+ "segmentos": [
+  {
+   "inicio": 1.3,
+   "fin": 4.26,
+   "texto": "Pizzería Tono, buenas tardes"
+  },
+  {
+   "inicio": 4.26,
+   "fin": 9.6,
+   "texto": "Buenas tardes, quisiera pedir una pizza para llevar a mi casa"
+  },
+  {
+   "inicio": 9.6,
+   "fin": 11.86,
+   "texto": "Claro, ¿qué pizza desea?"
+  },
+  {
+   "inicio": 13.9,
+   "fin": 17.54,
+   "texto": "¿Cuál me recomienda? Espero una reunión de cuatro personas"
+  },
+  {
+   "inicio": 17.54,
+   "fin": 26.94,
+   "texto": "Le recomiendo la suprema familiar, lleva pepperoni, jamón, champiñones, pimiento y aceituna, cuesta 52 soles"
+  },
+  {
+   "inicio": 26.94,
+   "fin": 31.3,
+   "texto": "Ya, una suprema familiar entonces"
+  },
+  {
+   "inicio": 31.3,
+   "fin": 35.7,
+   "texto": "Una suprema familiar, ¿algo para acompañar?"
+  },
+  {
+   "inicio": 37.06,
+   "fin": 39.7,
+   "texto": "Sí, dos panes de ajo, por favor"
+  },
+  {
+   "inicio": 39.7,
+   "fin": 45.6,
+   "texto": "Dos panes al ajo, a ocho soles cada uno, ¿y para tomar?"
+  },
+  {
+   "inicio": 46.64,
+   "fin": 48.76,
+   "texto": "Una gaseosa de litro y medio"
+  },
+  {
+   "inicio": 48.76,
+   "fin": 51.88,
+   "texto": "Perfecto, ¿tiene algún cupón de descuento?"
+  },
+  {
+   "inicio": 53.36,
+   "fin": 59.38,
+   "texto": "No, ninguno, ya he pedido antes, así que creo que el de bienvenida no me vale"
+  },
+  {
+   "inicio": 59.38,
+   "fin": 61.26,
+   "texto": "Así es"
+  },
+  {
+   "inicio": 61.26,
+   "fin": 64.62,
+   "texto": "El cupón de bienvenida es solo para el primer pedido"
+  },
+  {
+   "inicio": 64.62,
+   "fin": 66.72,
+   "texto": "¿Me da la dirección, por favor?"
+  },
+  {
+   "inicio": 68.08,
+   "fin": 75.32,
+   "texto": "Girón Pizarro, 418, departamento 3B, es un edificio de cinco pisos con una puerta verde"
+  },
+  {
+   "inicio": 75.32,
+   "fin": 81.54,
+   "texto": "Girón Pizarro, 418, departamento 3B, ¿cómo desea pagar?"
+  },
+  {
+   "inicio": 82.7,
+   "fin": 84.44,
+   "texto": "Con Yape, por favor"
+  },
+  {
+   "inicio": 84.44,
+   "fin": 90.58,
+   "texto": "Perfecto, el motorizado le muestra el código para que Yape al llegar"
+  },
+  {
+   "inicio": 91.26,
+   "fin": 100.2,
+   "texto": "Le confirmo, una pizza suprema familiar, dos panes al ajo y una gaseosa de litro y medio, serían 72 soles en total"
+  },
+  {
+   "inicio": 100.2,
+   "fin": 105.92,
+   "texto": "¿72? Perfecto, llega antes de las 7"
+  },
+  {
+   "inicio": 105.92,
+   "fin": 110.64,
+   "texto": "Sí, en unos 35 minutos estaría llegando"
+  },
+  {
+   "inicio": 110.64,
+   "fin": 113.42,
+   "texto": "Excelente, gracias"
+  },
+  {
+   "inicio": 113.42,
+   "fin": 115.92,
+   "texto": "Gracias a usted"
+  },
+  {
+   "inicio": 115.92,
+   "fin": 118.34,
+   "texto": "Buenas tardes"
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4116.0,
+ "segundos": 9.3,
+ "duracion_audio": 120.87,
+ "seg_por_minuto": 4.62,
+ "glosario": "hotwords",
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "escalera_L0",
+ "clip": "t2_llamada_02_L0"
+}

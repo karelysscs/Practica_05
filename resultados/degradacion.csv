@@ -1,0 +1,17 @@
+clip,nivel,detalle,snr_db_medida
+t2_llamada_01,L0,original,
+t2_llamada_01,L1,Opus 12k mono,
+t2_llamada_01,L2,"banda 300-3400 Hz, 8000 Hz",
+t2_llamada_01,L3,L1 + ruido rosa sintético (no se encontró ruido grabado),5.0
+t2_llamada_02,L0,original,
+t2_llamada_02,L1,Opus 12k mono,
+t2_llamada_02,L2,"banda 300-3400 Hz, 8000 Hz",
+t2_llamada_02,L3,L1 + ruido rosa sintético (no se encontró ruido grabado),5.0
+t2_llamada_03,L0,original,
+t2_llamada_03,L1,Opus 12k mono,
+t2_llamada_03,L2,"banda 300-3400 Hz, 8000 Hz",
+t2_llamada_03,L3,L1 + ruido rosa sintético (no se encontró ruido grabado),5.0
+t2_llamada_04,L0,original,
+t2_llamada_04,L1,Opus 12k mono,
+t2_llamada_04,L2,"banda 300-3400 Hz, 8000 Hz",
+t2_llamada_04,L3,L1 + ruido rosa sintético (no se encontró ruido grabado),5.0

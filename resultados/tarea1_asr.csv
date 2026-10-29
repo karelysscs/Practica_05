@@ -1,5 +1,22 @@
 experimento,modelo,dispositivo_pedido,dispositivo_real,gpu,precision,glosario,clip,wer,cer,segundos,seg_por_minuto,vram_pico_mb
+small_cuda_fp16,small,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_01,0.08650519031141868,0.04262877442273535,4.91,2.11,884.0
+small_cuda_fp16,small,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_02,0.1686746987951807,0.08304498269896193,3.57,1.79,852.0
+small_cuda_fp16,small,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_03,0.11715481171548117,0.05649303008070433,3.07,1.46,852.0
+small_cuda_fp16,small,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_04,0.04504504504504504,0.013921113689095127,2.96,1.46,852.0
+large_cuda_fp16,large-v3,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_01,0.04844290657439446,0.036116044997039666,13.13,5.65,4084.0
+large_cuda_fp16,large-v3,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_02,0.0642570281124498,0.04013840830449827,10.09,5.05,4052.0
+large_cuda_fp16,large-v3,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_03,0.07112970711297072,0.03961848862802641,23.53,11.19,4948.0
+large_cuda_fp16,large-v3,cuda,cuda:0,Tesla T4,float16,no,t1_entrevista_04,0.05855855855855856,0.048723897911832945,9.34,4.61,4052.0
+large_cuda_int8,large-v3,cuda,cuda:0,Tesla T4,int8_float16,no,t1_entrevista_01,0.0726643598615917,0.054470100651272946,12.42,5.34,2548.0
+large_cuda_int8,large-v3,cuda,cuda:0,Tesla T4,int8_float16,no,t1_entrevista_02,0.07228915662650602,0.04636678200692042,10.05,5.03,2516.0
+large_cuda_int8,large-v3,cuda,cuda:0,Tesla T4,int8_float16,no,t1_entrevista_03,0.08786610878661087,0.05796038151137197,30.68,14.59,3412.0
+large_cuda_int8,large-v3,cuda,cuda:0,Tesla T4,int8_float16,no,t1_entrevista_04,0.03153153153153153,0.025522041763341066,9.28,4.58,2548.0
+large_cuda_fp16_glos,large-v3,cuda,cuda:0,Tesla T4,float16,hotwords,t1_entrevista_01,0.05536332179930796,0.037892243931320305,13.25,5.7,4180.0
+large_cuda_fp16_glos,large-v3,cuda,cuda:0,Tesla T4,float16,hotwords,t1_entrevista_02,0.05622489959839357,0.035986159169550176,10.7,5.36,4148.0
+large_cuda_fp16_glos,large-v3,cuda,cuda:0,Tesla T4,float16,hotwords,t1_entrevista_03,0.20502092050209206,0.18341892883345562,16.2,7.7,5044.0
+large_cuda_fp16_glos,large-v3,cuda,cuda:0,Tesla T4,float16,hotwords,t1_entrevista_04,0.036036036036036036,0.027842227378190254,9.87,4.87,4116.0
 small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_01,0.08996539792387544,0.04322084073416223,128.97,55.45,
 small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_02,0.14457831325301204,0.07197231833910035,105.59,52.91,
 small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_03,0.12133891213389121,0.05796038151137197,103.11,49.04,
 small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_04,0.05405405405405406,0.017014694508894045,77.62,38.3,
+large_cpu_int8,large-v3,cpu,cpu:0,Tesla T4,int8,no,t1_entrevista_01,0.04844290657439446,0.036116044997039666,293.7,126.29,0.0
