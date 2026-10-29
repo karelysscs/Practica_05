@@ -9,3 +9,6 @@ PyYAML==6.0.3
 python-dotenv==1.2.4
 jiwer==4.0.0
 soundfile==0.14.0
+# librerías de CUDA 12 que necesita CTranslate2 (Colab puede traer otra versión de CUDA)
+nvidia-cublas-cu12==12.9.2.10
+nvidia-cudnn-cu12==9.27.0.42
