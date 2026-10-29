@@ -1,0 +1,115 @@
+{
+ "texto": "Buenos días. Adelante, tome asientos de entrevistas para el puesto de desarrollo fronteer para empezar. ¿Cuál fue su último trabajo? Buenos días. Mi último trabajo fue como practicante desde este río web en una agencia de marketing digital. Terminé las prácticas hace dos semanas. Muy bien. Le voy a hacer una pregunta directa desde ya para no perder el tiempo. ¿Cuánto espera ganar? Bueno, como estoy empezando, mi pretensión es de 2200 soles al mes. 2200 soles está dentro del rango. ¿Y cómo está con el inglés? Sinceramente, mi inglés es básico. Entiendo cuando leo sobre todo los mensajes de error, pero no podría tener una reunión en inglés. Entiendo, básico. Y en total, cuánta experiencia tiene programando. Tengo una unidad de prácticas profesionales en la agencia. Un año y medio. ¿Y con qué tecnologías ha trabajado? Con JavaScript. Sobre todo con real. También manejo HTML y CSS. Y uso Y para el control de versiones. Perfecto. Cuénteme de algún proyecto. Hice la página web de una cadena de veterinarias. Tenía un regulario para reservar citas y usaban 300 personas al día. Muy bien. ¿Y desde cuándo podría comenzar? Podría empezar en un mes, porque estoy terminando un curso que acaba fin de mes. ¿Un mes perfecto? ¿Tiene alguna pregunta? ¿Había alguien que pillé al inicio? Claro. Tendría un mentor durante los primeros tres meses. Genial. Mucho gusto. Gracias a ustedes. Hasta pronto.",
+ "segmentos": [
+  {
+   "inicio": 1.68,
+   "fin": 9.68,
+   "texto": "Buenos días. Adelante, tome asientos de entrevistas para el puesto de desarrollo fronteer para empezar. ¿Cuál fue su último trabajo?"
+  },
+  {
+   "inicio": 10.68,
+   "fin": 19.68,
+   "texto": "Buenos días. Mi último trabajo fue como practicante desde este río web en una agencia de marketing digital. Terminé las prácticas hace dos semanas."
+  },
+  {
+   "inicio": 19.68,
+   "fin": 25.68,
+   "texto": "Muy bien. Le voy a hacer una pregunta directa desde ya para no perder el tiempo. ¿Cuánto espera ganar?"
+  },
+  {
+   "inicio": 26.68,
+   "fin": 31.68,
+   "texto": "Bueno, como estoy empezando, mi pretensión es de 2200 soles al mes."
+  },
+  {
+   "inicio": 32.68,
+   "fin": 38.68,
+   "texto": "2200 soles está dentro del rango. ¿Y cómo está con el inglés?"
+  },
+  {
+   "inicio": 39.68,
+   "fin": 49.68,
+   "texto": "Sinceramente, mi inglés es básico. Entiendo cuando leo sobre todo los mensajes de error, pero no podría tener una reunión en inglés."
+  },
+  {
+   "inicio": 49.68,
+   "fin": 53.68,
+   "texto": "Entiendo, básico. Y en total, cuánta experiencia tiene programando."
+  },
+  {
+   "inicio": 53.68,
+   "fin": 66.83,
+   "texto": "Tengo una unidad de prácticas profesionales en la agencia."
+  },
+  {
+   "inicio": 66.83,
+   "fin": 70.83,
+   "texto": "Un año y medio. ¿Y con qué tecnologías ha trabajado?"
+  },
+  {
+   "inicio": 71.83,
+   "fin": 80.83,
+   "texto": "Con JavaScript. Sobre todo con real. También manejo HTML y CSS. Y uso Y para el control de versiones."
+  },
+  {
+   "inicio": 80.83,
+   "fin": 83.83,
+   "texto": "Perfecto. Cuénteme de algún proyecto."
+  },
+  {
+   "inicio": 83.83,
+   "fin": 96.4,
+   "texto": "Hice la página web de una cadena de veterinarias. Tenía un regulario para reservar citas y usaban 300 personas al día."
+  },
+  {
+   "inicio": 96.4,
+   "fin": 98.4,
+   "texto": "Muy bien. ¿Y desde cuándo podría comenzar?"
+  },
+  {
+   "inicio": 98.4,
+   "fin": 106.06,
+   "texto": "Podría empezar en un mes, porque estoy terminando un curso que acaba fin de mes."
+  },
+  {
+   "inicio": 106.06,
+   "fin": 109.06,
+   "texto": "¿Un mes perfecto? ¿Tiene alguna pregunta?"
+  },
+  {
+   "inicio": 111.85,
+   "fin": 114.85,
+   "texto": "¿Había alguien que pillé al inicio?"
+  },
+  {
+   "inicio": 114.85,
+   "fin": 118.85,
+   "texto": "Claro. Tendría un mentor durante los primeros tres meses."
+  },
+  {
+   "inicio": 119.85,
+   "fin": 121.85,
+   "texto": "Genial. Mucho gusto."
+  },
+  {
+   "inicio": 121.85,
+   "fin": 123.85,
+   "texto": "Gracias a ustedes. Hasta pronto."
+  }
+ ],
+ "modelo": "small",
+ "precision": "int8",
+ "dispositivo_pedido": "cpu",
+ "dispositivo_real": "cpu:0",
+ "gpus_cuda_visibles": 0,
+ "gpu": null,
+ "vram_pico_mb": null,
+ "segundos": 103.11,
+ "duracion_audio": 126.14,
+ "seg_por_minuto": 49.04,
+ "glosario": null,
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "small_cpu_int8",
+ "clip": "t1_entrevista_03"
+}

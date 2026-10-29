@@ -1,0 +1,33 @@
+# Compuerta de regresión: recalcula las métricas desde las transcripciones en caché.
+# Los runners de GitHub no tienen GPU, así que aquí NUNCA se transcribe.
+name: regresion
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-ci.txt
+      - name: Pruebas
+        run: pytest -q
+      - name: Métricas desde la caché
+        run: python scripts/evaluar.py
+      - name: El registro con texto perfecto no puede empeorar
+        run: |
+          python - <<'EOF'
+          import pandas as pd
+          r = pd.read_csv("resultados/tarea1_registro_resumen.csv")
+          ref = r[(r.fuente == "referencia") & (r.metodo == "reglas")].iloc[0]
+          assert ref.acierto_global == 1.0, f"tarea 1 bajó a {ref.acierto_global}"
+          t2 = pd.read_csv("resultados/tarea2_resumen.csv")
+          ref2 = t2[(t2.nivel == "referencia") & (t2.metodo == "reglas")].iloc[0]
+          assert ref2.acierto_campos == 1.0 and ref2.rotos_no_atrapados == 0
+          print("ok")
+          EOF

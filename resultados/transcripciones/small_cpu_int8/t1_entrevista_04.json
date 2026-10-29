@@ -1,0 +1,125 @@
+{
+ "texto": "Hola, buenos días. Antes de empezar una consulta práctica, si le ofrecemos el puesto, ¿cuándo podría empezar? Buenos días. Necesito cerrar algunos pendientes, así que podría empezar en dos semanas. Dos semanas? Perfecto. ¿Cuántos años de experiencia tienen diseño? Tengo cinco años de experiencia. Los dos primeros fueron de diseño gráfico y los últimos tres en diseño de experiencia de usuario. Muy bien. Este puesto incluye trabajo con equipos de otros países. ¿Qué nivel de inglés tiene? Avanzado. Estudié seis años en el instituto de idiomas y presentó mis diseños en inglés casi todas las semanas. Excelente. Hablemos de salario. ¿Cuál es su pretensión? Tengo 6.500. No, perdón, me confundí con otra postulación. Mi pretensión es de 6.000 soles. ¿6.000 soles? Ha notado. ¿Qué herramientas usa? Uso Figma para casi todo y antes trabajaba con Adobe. También uso MIRO para los talleres con usuarios y se lo básico de HTML para conversar con los desarrolladores. ¿Y cuál fue su último puesto? Mi último puesto fue especialista en experiencia de usuario en una aplicación de delivery. Diseñé el proceso de pago y las compras abandonadas bajaron en un 15%. Muy buen resultado. ¿Tiene alguna pregunta? Sí. ¿Cuántas personas hay en el equipo de diseño? Hay tres en diseño y dos en investigación. Perfecto. Muchas gracias. Gracias a usted. Estaremos en contacto.",
+ "segmentos": [
+  {
+   "inicio": 1.84,
+   "fin": 7.22,
+   "texto": "Hola, buenos días. Antes de empezar una consulta práctica, si le ofrecemos el puesto, ¿cuándo"
+  },
+  {
+   "inicio": 7.22,
+   "fin": 8.6,
+   "texto": "podría empezar?"
+  },
+  {
+   "inicio": 8.6,
+   "fin": 16.2,
+   "texto": "Buenos días. Necesito cerrar algunos pendientes, así que podría empezar en dos semanas."
+  },
+  {
+   "inicio": 16.2,
+   "fin": 22.32,
+   "texto": "Dos semanas? Perfecto. ¿Cuántos años de experiencia tienen diseño?"
+  },
+  {
+   "inicio": 22.32,
+   "fin": 27.32,
+   "texto": "Tengo cinco años de experiencia. Los dos primeros fueron de diseño gráfico y"
+  },
+  {
+   "inicio": 27.32,
+   "fin": 31.96,
+   "texto": "los últimos tres en diseño de experiencia de usuario."
+  },
+  {
+   "inicio": 31.96,
+   "fin": 38.44,
+   "texto": "Muy bien. Este puesto incluye trabajo con equipos de otros países. ¿Qué nivel de inglés tiene?"
+  },
+  {
+   "inicio": 38.44,
+   "fin": 45.76,
+   "texto": "Avanzado. Estudié seis años en el instituto de idiomas y presentó mis diseños en inglés casi todas las semanas."
+  },
+  {
+   "inicio": 45.76,
+   "fin": 51.4,
+   "texto": "Excelente. Hablemos de salario. ¿Cuál es su pretensión?"
+  },
+  {
+   "inicio": 51.4,
+   "fin": 62.4,
+   "texto": "Tengo 6.500. No, perdón, me confundí con otra postulación. Mi pretensión es de 6.000 soles."
+  },
+  {
+   "inicio": 62.4,
+   "fin": 68.4,
+   "texto": "¿6.000 soles? Ha notado. ¿Qué herramientas usa?"
+  },
+  {
+   "inicio": 68.4,
+   "fin": 77.4,
+   "texto": "Uso Figma para casi todo y antes trabajaba con Adobe. También uso MIRO para los talleres con usuarios"
+  },
+  {
+   "inicio": 77.4,
+   "fin": 84.4,
+   "texto": "y se lo básico de HTML para conversar con los desarrolladores."
+  },
+  {
+   "inicio": 84.4,
+   "fin": 88.4,
+   "texto": "¿Y cuál fue su último puesto?"
+  },
+  {
+   "inicio": 88.4,
+   "fin": 95.4,
+   "texto": "Mi último puesto fue especialista en experiencia de usuario en una aplicación de delivery."
+  },
+  {
+   "inicio": 95.4,
+   "fin": 103.4,
+   "texto": "Diseñé el proceso de pago y las compras abandonadas bajaron en un 15%."
+  },
+  {
+   "inicio": 103.4,
+   "fin": 106.4,
+   "texto": "Muy buen resultado. ¿Tiene alguna pregunta?"
+  },
+  {
+   "inicio": 106.4,
+   "fin": 111.68,
+   "texto": "Sí. ¿Cuántas personas hay en el equipo de diseño?"
+  },
+  {
+   "inicio": 111.68,
+   "fin": 115.68,
+   "texto": "Hay tres en diseño y dos en investigación."
+  },
+  {
+   "inicio": 115.68,
+   "fin": 118.68,
+   "texto": "Perfecto. Muchas gracias."
+  },
+  {
+   "inicio": 118.68,
+   "fin": 121.68,
+   "texto": "Gracias a usted. Estaremos en contacto."
+  }
+ ],
+ "modelo": "small",
+ "precision": "int8",
+ "dispositivo_pedido": "cpu",
+ "dispositivo_real": "cpu:0",
+ "gpus_cuda_visibles": 0,
+ "gpu": null,
+ "vram_pico_mb": null,
+ "segundos": 77.62,
+ "duracion_audio": 121.6,
+ "seg_por_minuto": 38.3,
+ "glosario": null,
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "small_cpu_int8",
+ "clip": "t1_entrevista_04"
+}

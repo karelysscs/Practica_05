@@ -1,0 +1,5 @@
+nivel,metodo,clip,wer,cer,items_ok,promocion_ok,direccion_entrega_ok,metodo_pago_ok,total_dicho_ok,campos_ok,fuente_items,sin_verificar,suma_calculada,total_dicho,total_correcto,cuadra,diagnostico,causa_real,diagnostico_ok,roto,atrapado,trampa_total_mal,trampa_cambio_pedido
+referencia,reglas,t2_llamada_01,0.0,0.0,True,True,True,True,True,5,confirmacion,,91,91,91.0,True,ok,,,False,False,False,True
+referencia,reglas,t2_llamada_02,0.0,0.0,True,True,True,True,True,5,confirmacion,,77,72,77.0,False,error_hablante,error_hablante,True,True,True,True,False
+referencia,reglas,t2_llamada_03,0.0,0.0,True,True,True,True,True,5,confirmacion,,103,113,103.0,False,error_hablante,error_hablante,True,True,True,True,True
+referencia,reglas,t2_llamada_04,0.0,0.0,True,True,True,True,True,5,confirmacion,,94,98,94.0,False,error_hablante,error_hablante,True,True,True,True,True
