@@ -1,0 +1,5 @@
+experimento,modelo,dispositivo_pedido,dispositivo_real,gpu,precision,glosario,clip,wer,cer,segundos,seg_por_minuto,vram_pico_mb
+small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_01,0.08996539792387544,0.04322084073416223,128.97,55.45,
+small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_02,0.14457831325301204,0.07197231833910035,105.59,52.91,
+small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_03,0.12133891213389121,0.05796038151137197,103.11,49.04,
+small_cpu_int8,small,cpu,cpu:0,,int8,no,t1_entrevista_04,0.05405405405405406,0.017014694508894045,77.62,38.3,

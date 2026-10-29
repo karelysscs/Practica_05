@@ -1,0 +1,2 @@
+experimento,modelo,dispositivo_real,precision,glosario,clips,wer,wer_ic_bajo,wer_ic_alto,cer,seg_por_minuto,vram_pico_mb
+small_cpu_int8,small,cpu:0,int8,no,4,0.1025,0.0709,0.133,0.0475,48.92,

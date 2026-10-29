@@ -1,0 +1,11 @@
+# GitHub Actions: sin GPU y sin transcribir; solo pruebas y métricas desde la caché.
+PyYAML==6.0.3
+python-dotenv==1.2.4
+jiwer==4.0.0
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+scikit-learn==1.9.1
+soundfile==0.14.0
+anthropic==2.3.0
+pytest==9.2.0

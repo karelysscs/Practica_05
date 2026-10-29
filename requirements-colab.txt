@@ -1,0 +1,11 @@
+# Colab con GPU: solo lo que hace falta para transcribir y medir.
+# numpy/pandas/scipy se dejan con las versiones que ya trae Colab para no romper su entorno.
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+# faster-whisper 1.2.1 usa av.open(metadata_errors=...), que PyAV 16+ ya no acepta
+av==15.1.0
+nvidia-ml-py==13.615.71
+PyYAML==6.0.3
+python-dotenv==1.2.4
+jiwer==4.0.0
+soundfile==0.14.0

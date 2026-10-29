@@ -1,0 +1,18 @@
+{
+  "tarea2": [
+    {
+      "nivel": "referencia",
+      "metodo": "reglas",
+      "clips": 4,
+      "wer": 0.0,
+      "acierto_campos": 1.0,
+      "ic_bajo": 0.839,
+      "ic_alto": 1.0,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    }
+  ]
+}

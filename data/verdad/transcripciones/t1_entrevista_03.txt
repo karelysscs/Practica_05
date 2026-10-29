@@ -1,0 +1,19 @@
+Buenos días, adelante, tome asiento. Esta entrevista es para el puesto de desarrollo frontend. Para empezar, ¿cuál fue su último trabajo?
+Buenos días. Mi último trabajo fue como practicante de desarrollo web en una agencia de marketing digital. Terminé las prácticas hace dos semanas.
+Muy bien. Le voy a hacer una pregunta directa desde ya, para no perder tiempo. ¿Cuánto espera ganar?
+Bueno, como estoy empezando, mi pretensión es de dos mil doscientos soles al mes.
+Dos mil doscientos soles, está dentro del rango. ¿Y cómo está con el inglés?
+Sinceramente, mi inglés es básico. Entiendo cuando leo, sobre todo los mensajes de error, pero no podría tener una reunión en inglés.
+Entiendo, básico. Y en total, ¿cuánta experiencia tiene programando?
+Tengo un año y medio de prácticas profesionales en la agencia.
+Un año y medio. ¿Con qué tecnologías ha trabajado?
+Con JavaScript, sobre todo con React. También manejo HTML y CSS, y uso Git para el control de versiones.
+Perfecto. Cuénteme de algún proyecto.
+Hice la página web de una cadena de veterinarias. Tenía un formulario para reservar citas y la usaban unas trescientas personas al día.
+Muy bien. ¿Y desde cuándo podría empezar?
+Podría empezar en un mes, porque estoy terminando un curso que acaba a fin de mes.
+En un mes, perfecto. ¿Tiene alguna pregunta?
+Sí, ¿habría alguien que me guíe al inicio?
+Claro, tendría un mentor durante los primeros tres meses.
+Genial, muchas gracias.
+Gracias a usted. Hasta pronto.

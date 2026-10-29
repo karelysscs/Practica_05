@@ -1,0 +1,21 @@
+Pizzería Tono, buenas noches, le saluda el área de pedidos.
+Hola, buenas noches. Es la primera vez que les pido, una amiga me los recomendó.
+Qué bueno, bienvenida. Como es su primer pedido, puede usar el cupón BIENVENIDA, que le descuenta quince soles.
+Ah, genial. Entonces quiero dos pizzas hawaianas medianas…
+Dos hawaianas medianas…
+No, espere, mejor que sean tres. Viene más gente de la que pensaba.
+Perfecto, tres hawaianas medianas, a treinta soles cada una. ¿Algo más?
+Sí, también una americana mediana para los niños, que no les gusta la piña.
+Una americana mediana, veintiocho soles. ¿Desea algo para tomar o pan al ajo?
+No, gracias, bebidas ya tenemos.
+Muy bien. ¿A qué dirección lo enviamos?
+Calle Los Pinos doscientos cincuenta y seis, urbanización El Recreo. Es la casa de dos pisos con rejas negras.
+Calle Los Pinos doscientos cincuenta y seis, urbanización El Recreo. ¿Cuál será el medio de pago?
+Con tarjeta. ¿El motorizado lleva el POS?
+Sí, lleva el POS y acepta Visa y Mastercard.
+Perfecto.
+Le confirmo el pedido: tres pizzas hawaianas medianas, una americana mediana, y el cupón BIENVENIDA de quince soles. El total es ciento trece soles.
+Ciento trece, de acuerdo.
+Su pedido llega en unos cuarenta y cinco minutos.
+Muchas gracias.
+A usted, que disfrute.

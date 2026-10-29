@@ -1,0 +1,94 @@
+# Todo lo que se puede cambiar sin tocar el código: rutas, modelos, umbrales y prompts.
+# Las credenciales NO van aquí: van en .env (ver .env.example).
+
+rutas:
+  audio: data/audio                      # audios grabados (no se suben a GitHub)
+  audio_degradado: data/audio_degradado  # escalera L1-L3 de la tarea 2 (no se sube)
+  guiones: data/guiones
+  verdad: data/verdad                    # tablas de respuestas correctas y transcripciones de referencia
+  transcripciones: resultados/transcripciones   # caché de transcripciones (sí se sube)
+  resultados: resultados
+
+# ───────────────────────────── transcripción (faster-whisper)
+asr:
+  idioma: es
+  beam_size: 5
+  vad_filter: true
+  # Configuración que usa el motor por defecto (la mejor según los experimentos).
+  defecto: {modelo: large-v3, dispositivo: cuda, precision: float16, glosario: true}
+  # Configuración para la app en una laptop sin GPU.
+  laptop: {modelo: small, dispositivo: cpu, precision: int8, glosario: true}
+
+# Experimentos de la fase 2 (tarea 1). Cada uno guarda su caché en resultados/transcripciones/<nombre>/.
+# clips: "todos" o una lista de nombres (el CPU con el modelo grande es lento: se mide en un solo clip).
+experimentos:
+  - {nombre: small_cuda_fp16,        modelo: small,    dispositivo: cuda, precision: float16,      glosario: false, clips: todos}
+  - {nombre: large_cuda_fp16,        modelo: large-v3, dispositivo: cuda, precision: float16,      glosario: false, clips: todos}
+  - {nombre: large_cuda_int8,        modelo: large-v3, dispositivo: cuda, precision: int8_float16, glosario: false, clips: todos}
+  - {nombre: large_cuda_fp16_glos,   modelo: large-v3, dispositivo: cuda, precision: float16,      glosario: true,  clips: todos}
+  - {nombre: small_cpu_int8,         modelo: small,    dispositivo: cpu,  precision: int8,         glosario: false, clips: todos}
+  - {nombre: large_cpu_int8,         modelo: large-v3, dispositivo: cpu,  precision: int8,         glosario: false, clips: [t1_entrevista_01]}
+
+# Glosario del dominio: se le pasa al modelo como pista (hotwords si la versión lo soporta; si no, initial_prompt).
+glosario:
+  tarea1: [Python, SQL, Power BI, Excel, Java, Spring Boot, Docker, AWS, Kubernetes, JavaScript, React,
+           HTML, CSS, Git, Figma, Adobe XD, Miro, Oracle, PostgreSQL, Linux, Bash, backend, frontend, fintech]
+  tarea2: [Pizzería Tono, pepperoni, hawaiana, americana, suprema, familiar, mediana, personal,
+           pan al ajo, gaseosa, dúo familiar, BIENVENIDA, Yape, Plin, POS, delivery]
+
+# ───────────────────────────── extracción
+extraccion:
+  anio_referencia: 2026      # para convertir "quince de noviembre" en una fecha
+  # Tecnologías que se reconocen (vocabulario cerrado: lo que no esté aquí no se extrae por reglas).
+  tecnologias: [Python, SQL, Power BI, Excel, Java, Spring Boot, Docker, AWS, Kubernetes, JavaScript,
+                React, HTML, CSS, Git, Figma, Adobe XD, Miro, Oracle, PostgreSQL, Linux, Bash]
+  niveles_ingles: [basico, intermedio, avanzado]
+
+# Carta de la pizzería (tarea 2). Los precios salen de aquí cuando no se dicen en la llamada.
+carta:
+  pizzas:
+    americana: {personal: 15, mediana: 28, familiar: 42}
+    pepperoni: {personal: 18, mediana: 32, familiar: 46}
+    hawaiana:  {personal: 17, mediana: 30, familiar: 44}
+    suprema:   {personal: 20, mediana: 36, familiar: 52}
+  extras:
+    gaseosa 1.5L: 9
+    pan al ajo: 8
+  promociones:
+    duo familiar: 10
+    cupon BIENVENIDA: 15
+  metodos_pago: [efectivo, yape, plin, tarjeta]
+
+# Extracción con LLM (camino 2). La clave va en .env como ANTHROPIC_API_KEY.
+llm:
+  modelo: claude-opus-5-5
+  esfuerzo: low
+  max_tokens: 4000
+  prompt_sistema: |
+    Eres un asistente que llena formularios a partir de transcripciones de audio en español peruano.
+    Reglas:
+    - Usa solo lo que se dice en la transcripción. No inventes nada.
+    - Para cada campo devuelve el valor y la "evidencia": el fragmento exacto de la transcripción,
+      copiado letra por letra, de donde sale el valor.
+    - Si la persona se corrige ("no, mejor..."), vale lo último que dijo.
+    - Si un campo no aparece, devuelve valor null y evidencia "".
+
+# ───────────────────────────── degradación (tarea 2, fase 2)
+degradacion:
+  niveles: [L0, L1, L2, L3]
+  L1_bitrate: 12k            # tipo nota de voz de WhatsApp (Opus mono, bajo bitrate)
+  L2_banda: [300, 3400]      # banda telefónica en Hz
+  L2_frecuencia: 8000        # se remuestrea a 8 kHz
+  L3_snr_db: 5               # ruido de fondo a 5 dB de SNR (se mide después de mezclar)
+  ruido: data/audio/ruido_ambiente.wav   # si no existe, se usa ruido rosa sintético (y se avisa)
+  semilla: 7
+
+# ───────────────────────────── validación aritmética (tarea 2, fase 3)
+validacion:
+  tolerancia_soles: 0.5
+
+# ───────────────────────────── métricas
+metricas:
+  bootstrap_reps: 2000
+  confianza: 0.95
+  semilla: 7
