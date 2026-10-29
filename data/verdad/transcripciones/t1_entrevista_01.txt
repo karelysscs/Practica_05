@@ -1,0 +1,19 @@
+Buenos días, gracias por venir. Esta entrevista es para el puesto de analista de datos en nuestra empresa. Para empezar, cuénteme un poco de usted.
+Buenos días, gracias por la oportunidad. Estudié estadística en la universidad y desde que egresé me dediqué al análisis de datos. En total tengo tres años de experiencia trabajando en el área.
+Tres años, perfecto. ¿Y cuál fue su último puesto?
+Mi último puesto fue analista de datos junior en una empresa de retail. Ahí veía las ventas de unas cuarenta tiendas y preparaba reportes semanales para gerencia.
+Interesante. ¿Qué herramientas usaba en el día a día?
+Principalmente Python para limpiar los datos, SQL para consultar la base de datos y Power BI para los tableros. También Excel, pero eso ya es lo básico.
+Muy bien. Cuénteme de un proyecto que le haya gustado mucho.
+Hice un tablero que mostraba qué productos se estaban quedando sin stock. Con eso bajamos los quiebres de stock en casi un veinte por ciento en seis meses.
+Excelente resultado. Hablemos del tema económico. ¿Cuál es su pretensión salarial?
+Estoy buscando cuatro mil quinientos soles mensuales.
+Cuatro mil quinientos soles, entendido. ¿Y cuándo podría empezar?
+Puedo empezar de inmediato, porque en este momento no estoy trabajando.
+Perfecto. Una última pregunta: ¿qué nivel de inglés tiene?
+Tengo un nivel intermedio. Puedo leer documentación técnica sin problema, pero en conversación todavía me cuesta un poco.
+Muy bien, entonces intermedio. ¿Tiene alguna pregunta para nosotros?
+Sí, quería saber cómo es el equipo con el que trabajaría.
+Sería un equipo de cinco personas, todas del área de inteligencia comercial. Trabajamos de forma híbrida: tres días en oficina y dos desde casa.
+Me parece muy bien. Muchas gracias.
+Gracias a usted. Le comunicaremos el resultado la próxima semana.

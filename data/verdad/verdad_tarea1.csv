@@ -1,0 +1,5 @@
+clip,anios_experiencia,ultimo_puesto,tecnologias,pretension_salarial,moneda,disponibilidad,nivel_ingles,trampas
+t1_entrevista_01,3,analista de datos junior,Python|SQL|Power BI|Excel,4500,PEN,inmediata,intermedio,numeros distractores (cuarenta tiendas; veinte por ciento; cinco personas)
+t1_entrevista_02,7,líder técnico de backend,Java|Spring Boot|Docker|AWS|Kubernetes,2800,USD,2026-12-01,avanzado,ingles primero; moneda en dolares; fecha exacta
+t1_entrevista_03,1.5,practicante de desarrollo web,JavaScript|React|HTML|CSS|Git,2200,PEN,1 mes,basico,un año y medio (decimal); distractor un año
+t1_entrevista_04,5,especialista en experiencia de usuario,Figma|Adobe XD|Miro|HTML,6000,PEN,2 semanas,avanzado,se corrige el sueldo (seis mil quinientos -> seis mil)

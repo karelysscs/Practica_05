@@ -1,0 +1,17 @@
+Hola, buenas tardes. Como le comentamos por correo, esta entrevista es para el puesto de líder técnico. El equipo trabaja con clientes de Estados Unidos, así que quiero empezar por el idioma. ¿Qué nivel de inglés tiene?
+Buenas tardes. Mi nivel de inglés es avanzado. Tengo reuniones diarias en inglés con clientes y también hice un intercambio de seis meses en Canadá.
+Excelente, eso es clave para nosotros. En cuanto a fechas, ¿cuándo podría incorporarse?
+Tengo que darle aviso a mi empleador actual, así que podría empezar a partir del primero de diciembre.
+Primero de diciembre, anotado. Cuénteme qué tecnologías domina.
+Trabajo sobre todo con Java y Spring Boot para el backend. Para desplegar usamos Docker, y todo está en AWS. Últimamente también he usado Kubernetes.
+Muy completo. ¿Cuál es su puesto actual?
+Actualmente soy líder técnico de backend en una fintech. Tengo a cargo un equipo de ocho personas.
+¿Y cuántos años de experiencia tiene en total?
+En total son siete años. Empecé haciendo soporte, luego pasé a desarrollo y hace dos años asumí el liderazgo del equipo.
+Siete años, muy bien. Por último, ¿cuál sería su pretensión salarial?
+Como el trabajo es con clientes del extranjero, estoy pidiendo dos mil ochocientos dólares mensuales.
+Dos mil ochocientos dólares. Lo voy a conversar con recursos humanos. ¿Tiene alguna duda sobre el puesto?
+Sí, ¿el trabajo es remoto?
+Es remoto, con una reunión presencial al mes en Lima.
+Perfecto. Muchas gracias por la información.
+Gracias por su tiempo. Le escribiremos en los próximos días.
