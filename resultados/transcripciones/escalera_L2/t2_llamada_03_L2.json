@@ -1,0 +1,125 @@
+{
+ "texto": "Pizzería Tono, buenas noches, le saluda el área de pedidos. Hola, buenas noches, es la primera vez que les pido, una amiga me los recomendó. Qué bueno, bienvenida, como es su primer pedido, fue a usar el cupón BIENVENIDA, que le descuenta 15 soles. Ah, genial, entonces quiero dos pizzas hawaianas medianas. Dos hawaianas medianas. No, espere, mejor que sean tres, viene más gente de la que pensaba. Perfecto, tres hawaianas medianas a 30 soles cada una, ¿algo más? Sí, también una americana mediana para los niños, que no les gusta la piña. Una americana mediana, 28 soles, ¿desea algo para tomar o pan al ajo? No, gracias, bebidas ya tenemos. Muy bien, ¿a qué dirección lo enviamos? Calle Los Pinos, 256, urbanización El Recreo, es la casa de dos pisos con rejas negras. Calle Los Pinos, 256, urbanización El Recreo, ¿cuál será el medio de pago? Con tarjeta. El motorizado lleva el POS y acepta pizza y MasterCard. Perfecto. Le confirmo el pedido, tres pizzas hawaianas medianas, una americana mediana y el cupón BIENVENIDA de 15 soles, el total es 113 soles. 113, de acuerdo. Su pedido llega en unos 45 minutos. Muchas gracias. A usted, que disfrute.",
+ "segmentos": [
+  {
+   "inicio": 1.39,
+   "fin": 5.67,
+   "texto": "Pizzería Tono, buenas noches, le saluda el área de pedidos."
+  },
+  {
+   "inicio": 7.21,
+   "fin": 13.55,
+   "texto": "Hola, buenas noches, es la primera vez que les pido, una amiga me los recomendó."
+  },
+  {
+   "inicio": 14.13,
+   "fin": 21.09,
+   "texto": "Qué bueno, bienvenida, como es su primer pedido, fue a usar el cupón BIENVENIDA, que le descuenta 15 soles."
+  },
+  {
+   "inicio": 22.51,
+   "fin": 27.15,
+   "texto": "Ah, genial, entonces quiero dos pizzas hawaianas medianas."
+  },
+  {
+   "inicio": 27.83,
+   "fin": 29.57,
+   "texto": "Dos hawaianas medianas."
+  },
+  {
+   "inicio": 29.57,
+   "fin": 36.35,
+   "texto": "No, espere, mejor que sean tres, viene más gente de la que pensaba."
+  },
+  {
+   "inicio": 37.73,
+   "fin": 42.71,
+   "texto": "Perfecto, tres hawaianas medianas a 30 soles cada una, ¿algo más?"
+  },
+  {
+   "inicio": 43.87,
+   "fin": 48.55,
+   "texto": "Sí, también una americana mediana para los niños, que no les gusta la piña."
+  },
+  {
+   "inicio": 49.39,
+   "fin": 54.83,
+   "texto": "Una americana mediana, 28 soles, ¿desea algo para tomar o pan al ajo?"
+  },
+  {
+   "inicio": 55.93,
+   "fin": 58.39,
+   "texto": "No, gracias, bebidas ya tenemos."
+  },
+  {
+   "inicio": 58.39,
+   "fin": 62.41,
+   "texto": "Muy bien, ¿a qué dirección lo enviamos?"
+  },
+  {
+   "inicio": 63.81,
+   "fin": 72.57,
+   "texto": "Calle Los Pinos, 256, urbanización El Recreo, es la casa de dos pisos con rejas negras."
+  },
+  {
+   "inicio": 73.97,
+   "fin": 80.21,
+   "texto": "Calle Los Pinos, 256, urbanización El Recreo, ¿cuál será el medio de pago?"
+  },
+  {
+   "inicio": 81.07,
+   "fin": 82.09,
+   "texto": "Con tarjeta."
+  },
+  {
+   "inicio": 82.09,
+   "fin": 90.52,
+   "texto": "El motorizado lleva el POS y acepta pizza y MasterCard."
+  },
+  {
+   "inicio": 90.6,
+   "fin": 92.6,
+   "texto": "Perfecto."
+  },
+  {
+   "inicio": 92.6,
+   "fin": 108.6,
+   "texto": "Le confirmo el pedido, tres pizzas hawaianas medianas, una americana mediana y el cupón BIENVENIDA de 15 soles, el total es 113 soles."
+  },
+  {
+   "inicio": 108.6,
+   "fin": 112.3,
+   "texto": "113, de acuerdo."
+  },
+  {
+   "inicio": 112.3,
+   "fin": 117.3,
+   "texto": "Su pedido llega en unos 45 minutos."
+  },
+  {
+   "inicio": 117.3,
+   "fin": 120.02,
+   "texto": "Muchas gracias."
+  },
+  {
+   "inicio": 120.02,
+   "fin": 122.02,
+   "texto": "A usted, que disfrute."
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4116.0,
+ "segundos": 9.83,
+ "duracion_audio": 122.84,
+ "seg_por_minuto": 4.8,
+ "glosario": "hotwords",
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "escalera_L2",
+ "clip": "t2_llamada_03_L2"
+}

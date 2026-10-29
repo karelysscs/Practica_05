@@ -1,0 +1,105 @@
+{
+ "texto": "Hola, buenas tardes. Como le comentamos por correo, esta entrevista es para el puesto de líder técnico. El equipo trabaja con clientes de Estados Unidos, así que quiero empezar por el idioma. ¿Qué nivel de inglés tiene? Desamanzado. Tengo reuniones diarias en inglés con clientes y también me hice un intercambio de seis meses en Canadá. Excelente. Eso es clave para nosotros. En cuanto a fechas, ¿cuándo podría incorporarse? Tengo que darle aviso a mi empleador actual, así que podría empezar a partir del primero de diciembre. Primero de diciembre, anotado. Cuénteme, ¿qué tecnologías domina? Trabajo sobre todo en Java y Spring Boot para el bucket. Para desplegar usamos Docker y todo está en AWS. Últimamente también he usado Kubernetes. Muy completo. ¿Cuál es su puesto actual? Usualmente soy líder técnico de bucket en una fintech. Estoy a cargo de un equipo de ocho personas. ¿Y cuántos años de experiencia tiene en total? En total son siete años. Empecé haciendo soporte, luego pasé a desarrollarlo y hace dos años asumí el liderazgo del equipo. Siete años, muy bien. Por último, ¿cuál sería su pretensión salarial? Como el trabajo es con clientes del extranjero, estoy pidiendo dos mil ochocientos dólares mensuales. Dos mil ochocientos dólares. Lo voy a conversar con Recursos Humanos. ¿Tiene alguna duda sobre el puesto? Sí. ¿El trabajo es remoto? Es remoto con una reunión presencial al mes en Lima. Perfecto. Muchas gracias por la información. Gracias por su tiempo. Le escribiremos en los próximos días.",
+ "segmentos": [
+  {
+   "inicio": 1.14,
+   "fin": 12.86,
+   "texto": "Hola, buenas tardes. Como le comentamos por correo, esta entrevista es para el puesto de líder técnico. El equipo trabaja con clientes de Estados Unidos, así que quiero empezar por el idioma. ¿Qué nivel de inglés tiene?"
+  },
+  {
+   "inicio": 16.7,
+   "fin": 23.66,
+   "texto": "Desamanzado. Tengo reuniones diarias en inglés con clientes y también me hice un intercambio de seis meses en Canadá."
+  },
+  {
+   "inicio": 25.08,
+   "fin": 30.0,
+   "texto": "Excelente. Eso es clave para nosotros. En cuanto a fechas, ¿cuándo podría incorporarse?"
+  },
+  {
+   "inicio": 30.0,
+   "fin": 37.58,
+   "texto": "Tengo que darle aviso a mi empleador actual, así que podría empezar a partir del primero de diciembre."
+  },
+  {
+   "inicio": 38.7,
+   "fin": 43.3,
+   "texto": "Primero de diciembre, anotado. Cuénteme, ¿qué tecnologías domina?"
+  },
+  {
+   "inicio": 44.56,
+   "fin": 59.98,
+   "texto": "Trabajo sobre todo en Java y Spring Boot para el bucket. Para desplegar usamos Docker y todo está en AWS. Últimamente también he usado Kubernetes."
+  },
+  {
+   "inicio": 60.86,
+   "fin": 63.6,
+   "texto": "Muy completo. ¿Cuál es su puesto actual?"
+  },
+  {
+   "inicio": 66.04,
+   "fin": 72.66,
+   "texto": "Usualmente soy líder técnico de bucket en una fintech. Estoy a cargo de un equipo de ocho personas."
+  },
+  {
+   "inicio": 73.22,
+   "fin": 75.78,
+   "texto": "¿Y cuántos años de experiencia tiene en total?"
+  },
+  {
+   "inicio": 77.96,
+   "fin": 85.72,
+   "texto": "En total son siete años. Empecé haciendo soporte, luego pasé a desarrollarlo y hace dos años asumí el liderazgo del equipo."
+  },
+  {
+   "inicio": 86.46,
+   "fin": 90.5,
+   "texto": "Siete años, muy bien. Por último, ¿cuál sería su pretensión salarial?"
+  },
+  {
+   "inicio": 90.5,
+   "fin": 97.75,
+   "texto": "Como el trabajo es con clientes del extranjero, estoy pidiendo dos mil ochocientos dólares mensuales."
+  },
+  {
+   "inicio": 97.75,
+   "fin": 103.65,
+   "texto": "Dos mil ochocientos dólares. Lo voy a conversar con Recursos Humanos. ¿Tiene alguna duda sobre el puesto?"
+  },
+  {
+   "inicio": 103.65,
+   "fin": 107.25,
+   "texto": "Sí. ¿El trabajo es remoto?"
+  },
+  {
+   "inicio": 107.25,
+   "fin": 110.67,
+   "texto": "Es remoto con una reunión presencial al mes en Lima."
+  },
+  {
+   "inicio": 110.67,
+   "fin": 115.0,
+   "texto": "Perfecto. Muchas gracias por la información."
+  },
+  {
+   "inicio": 115.0,
+   "fin": 118.4,
+   "texto": "Gracias por su tiempo. Le escribiremos en los próximos días."
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4052.0,
+ "segundos": 10.09,
+ "duracion_audio": 119.74,
+ "seg_por_minuto": 5.05,
+ "glosario": null,
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "large_cuda_fp16",
+ "clip": "t1_entrevista_02"
+}

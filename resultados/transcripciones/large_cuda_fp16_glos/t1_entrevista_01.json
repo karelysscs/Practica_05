@@ -1,0 +1,125 @@
+{
+ "texto": "Buenos días, gracias por venir. Esta entrevista es para el puesto de analista de datos en nuestra empresa. Para empezar, cuéntame un poco de usted. Buenos días, gracias por la oportunidad. Estudié estadística en la universidad y desde que crecí me dediqué a la análisis de datos. En total tengo tres años de experiencia trabajando en el área. Tres años, perfecto. ¿Y cuál fue su último puesto? Mi último puesto fue analista de datos junior en una empresa de retail. Ahí veía las ventas de unas 40 tiendas y preparaba reportes semanales para gerencia. Interesante. ¿Qué herramientas usaba en el día a día? Principalmente Python para limpiar los datos del SQL, para consultar la base de datos y Power BI para los tableros. También Excel, pero eso ya es base. Muy bien, cuénteme de un proyecto que le haya gustado mucho. Hice un tablero que mostraba qué productos se estaban quedando sin stock. Con eso bajamos los quiebres de stock en casi un 20% en seis meses. Excelente resultado. Hablemos del tema económico. ¿Cuál es su pretensión salarial? Estoy buscando 4.500 soles mensuales. 4.500 soles, entendido. ¿Y cuándo podría hacer eso? ¿Puedo empezar de inmediato? Porque en este momento no estoy trabajando. Perfecto. Una última pregunta. ¿Qué nivel de inglés tiene? Tengo un nivel intermedio. Puedo leer documentación técnica sin problema, pero en conversación todavía me cuesta un poco. Muy bien, entonces intermedio. ¿Tiene alguna pregunta para nosotros? Sí. Quería saber cómo es el equipo con el que trabajaría. ¿Sería un equipo de cinco personas, todos? Trabajamos del área de inteligencia comercial. Trabajamos de forma híbrida. Tres días en oficina y dos desde casa. Muchas gracias. Gracias a usted. Le comunicaremos el resultado la próxima semana. Gracias.",
+ "segmentos": [
+  {
+   "inicio": 1.33,
+   "fin": 8.81,
+   "texto": "Buenos días, gracias por venir. Esta entrevista es para el puesto de analista de datos en nuestra empresa. Para empezar, cuéntame un poco de usted."
+  },
+  {
+   "inicio": 10.59,
+   "fin": 21.15,
+   "texto": "Buenos días, gracias por la oportunidad. Estudié estadística en la universidad y desde que crecí me dediqué a la análisis de datos. En total tengo tres años de experiencia trabajando en el área."
+  },
+  {
+   "inicio": 21.83,
+   "fin": 24.37,
+   "texto": "Tres años, perfecto. ¿Y cuál fue su último puesto?"
+  },
+  {
+   "inicio": 24.37,
+   "fin": 37.27,
+   "texto": "Mi último puesto fue analista de datos junior en una empresa de retail. Ahí veía las ventas de unas 40 tiendas y preparaba reportes semanales para gerencia."
+  },
+  {
+   "inicio": 38.11,
+   "fin": 41.67,
+   "texto": "Interesante. ¿Qué herramientas usaba en el día a día?"
+  },
+  {
+   "inicio": 44.11,
+   "fin": 57.48,
+   "texto": "Principalmente Python para limpiar los datos del SQL, para consultar la base de datos y Power BI para los tableros. También Excel, pero eso ya es base."
+  },
+  {
+   "inicio": 57.5,
+   "fin": 62.98,
+   "texto": "Muy bien, cuénteme de un proyecto que le haya gustado mucho."
+  },
+  {
+   "inicio": 65.79,
+   "fin": 76.49,
+   "texto": "Hice un tablero que mostraba qué productos se estaban quedando sin stock. Con eso bajamos los quiebres de stock en casi un 20% en seis meses."
+  },
+  {
+   "inicio": 77.25,
+   "fin": 82.29,
+   "texto": "Excelente resultado. Hablemos del tema económico. ¿Cuál es su pretensión salarial?"
+  },
+  {
+   "inicio": 84.09,
+   "fin": 87.17,
+   "texto": "Estoy buscando 4.500 soles mensuales."
+  },
+  {
+   "inicio": 87.59,
+   "fin": 91.07,
+   "texto": "4.500 soles, entendido. ¿Y cuándo podría hacer eso?"
+  },
+  {
+   "inicio": 91.07,
+   "fin": 96.69,
+   "texto": "¿Puedo empezar de inmediato? Porque en este momento no estoy trabajando."
+  },
+  {
+   "inicio": 97.19,
+   "fin": 100.67,
+   "texto": "Perfecto. Una última pregunta. ¿Qué nivel de inglés tiene?"
+  },
+  {
+   "inicio": 102.15,
+   "fin": 108.33,
+   "texto": "Tengo un nivel intermedio. Puedo leer documentación técnica sin problema, pero en conversación todavía me cuesta un poco."
+  },
+  {
+   "inicio": 109.13,
+   "fin": 112.75,
+   "texto": "Muy bien, entonces intermedio. ¿Tiene alguna pregunta para nosotros?"
+  },
+  {
+   "inicio": 114.27,
+   "fin": 117.87,
+   "texto": "Sí. Quería saber cómo es el equipo con el que trabajaría."
+  },
+  {
+   "inicio": 118.27,
+   "fin": 120.87,
+   "texto": "¿Sería un equipo de cinco personas, todos?"
+  },
+  {
+   "inicio": 121.07,
+   "fin": 127.09,
+   "texto": "Trabajamos del área de inteligencia comercial. Trabajamos de forma híbrida. Tres días en oficina y dos desde casa."
+  },
+  {
+   "inicio": 129.8,
+   "fin": 130.38,
+   "texto": "Muchas gracias."
+  },
+  {
+   "inicio": 131.04,
+   "fin": 134.34,
+   "texto": "Gracias a usted. Le comunicaremos el resultado la próxima semana."
+  },
+  {
+   "inicio": 134.34,
+   "fin": 135.34,
+   "texto": "Gracias."
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4180.0,
+ "segundos": 13.25,
+ "duracion_audio": 139.54,
+ "seg_por_minuto": 5.7,
+ "glosario": "hotwords",
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "large_cuda_fp16_glos",
+ "clip": "t1_entrevista_01"
+}

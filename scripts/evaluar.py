@@ -105,12 +105,16 @@ def tarea1_asr(resumen: dict):
 # ───────────────────────────────────────────────────────── tarea 1, capa 2
 def tarea1_registro(metodos: list[str], df_asr: pd.DataFrame, resumen: dict):
     verdad = M.cargar_verdad(ruta("verdad") / "verdad_tarea1.csv")
-    mejor = cache(nombre_defecto())
+    # Las reglas se miden con la transcripción de cada experimento; el LLM (que cuesta) solo con
+    # el texto perfecto y con el experimento por defecto.
+    principales = {"referencia", f"asr:{nombre_defecto()}"}
     fuentes = {"referencia": {c: referencia(c) for c in verdad if referencia(c)},
-               f"asr:{nombre_defecto()}": {c: r["texto"] for c, r in mejor.items()}}
+               f"asr:{nombre_defecto()}": {c: r["texto"] for c, r in cache(nombre_defecto()).items()}}
+    for e in C["experimentos"]:
+        fuentes.setdefault(f"asr:{e['nombre']}", {c: r["texto"] for c, r in cache(e["nombre"]).items()})
     filas = []
     for fuente, textos in fuentes.items():
-        for metodo in metodos:
+        for metodo in (metodos if fuente in principales else ["reglas"]):
             for clip, texto in textos.items():
                 if clip not in verdad:
                     continue
@@ -158,10 +162,10 @@ def tarea1_registro(metodos: list[str], df_asr: pd.DataFrame, resumen: dict):
     if len(asr):
         perfectos, rotos = asr[asr.campos_ok == len(campos)], asr[asr.campos_ok < len(campos)]
         resumen["wer_vs_registro"] = {
-            "wer_alto_registro_perfecto": perfectos.sort_values("wer").iloc[-1][["clip", "wer", "campos_ok"]].to_dict()
-            if len(perfectos) else None,
-            "wer_bajo_registro_roto": rotos.sort_values("wer").iloc[0][["clip", "wer", "campos_ok"]].to_dict()
-            if len(rotos) else None,
+            "wer_alto_registro_perfecto": perfectos.sort_values("wer").iloc[-1][["fuente", "clip", "wer", "campos_ok"]]
+            .to_dict() if len(perfectos) else None,
+            "wer_bajo_registro_roto": rotos.sort_values("wer").iloc[0][["fuente", "clip", "wer", "campos_ok"]]
+            .to_dict() if len(rotos) else None,
         }
     return df
 

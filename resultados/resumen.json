@@ -1,4 +1,38 @@
 {
+  "precision": {
+    "clips": 4,
+    "clips_con_texto_distinto": 4,
+    "wer_entre_precisiones": 0.0322
+  },
+  "glosario": {
+    "mecanismo": "hotwords",
+    "clips": 4,
+    "dif_wer_media": 0.0276,
+    "ic": [
+      -0.0153,
+      0.0984
+    ],
+    "lectura": "negativo = el glosario baja el WER; si el IC cruza 0 no se puede afirmar"
+  },
+  "cpu_vs_gpu_small": {
+    "seg_por_min_cpu": 48.92,
+    "seg_por_min_gpu": 1.7,
+    "veces_mas_rapido": 28.7
+  },
+  "wer_vs_registro": {
+    "wer_alto_registro_perfecto": {
+      "fuente": "asr:large_cuda_int8",
+      "clip": "t1_entrevista_01",
+      "wer": 0.0726643598615917,
+      "campos_ok": 6
+    },
+    "wer_bajo_registro_roto": {
+      "fuente": "asr:large_cuda_int8",
+      "clip": "t1_entrevista_04",
+      "wer": 0.03153153153153153,
+      "campos_ok": 4
+    }
+  },
   "tarea2": [
     {
       "nivel": "referencia",
@@ -13,6 +47,62 @@
       "rotos_no_atrapados": 0,
       "falsas_alarmas": 0,
       "diagnostico_acierto": "3/3"
+    },
+    {
+      "nivel": "L0",
+      "metodo": "reglas",
+      "clips": 4,
+      "wer": 0.047,
+      "acierto_campos": 0.9,
+      "ic_bajo": 0.699,
+      "ic_alto": 0.972,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    },
+    {
+      "nivel": "L1",
+      "metodo": "reglas",
+      "clips": 4,
+      "wer": 0.0799,
+      "acierto_campos": 0.9,
+      "ic_bajo": 0.699,
+      "ic_alto": 0.972,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    },
+    {
+      "nivel": "L2",
+      "metodo": "reglas",
+      "clips": 4,
+      "wer": 0.0896,
+      "acierto_campos": 0.85,
+      "ic_bajo": 0.64,
+      "ic_alto": 0.948,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    },
+    {
+      "nivel": "L3",
+      "metodo": "reglas",
+      "clips": 4,
+      "wer": 0.101,
+      "acierto_campos": 0.85,
+      "ic_bajo": 0.64,
+      "ic_alto": 0.948,
+      "rotos": 4,
+      "rotos_atrapados": 4,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/4"
     }
   ]
 }

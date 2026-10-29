@@ -1,0 +1,145 @@
+{
+ "texto": "Pizzería Tono, buenas noches, le saluda el área de pedidos. Hola, buenas noches, es la primera vez que les pido, una amiga me los recomendó. Qué bueno, bienvenida, como es su primer pedido, puede usar el cupón BIENVENIDA, que le descuenta 15 soles. Ah, genial, entonces quiero dos pizzas hawaianas medianas. Dos hawaianas medianas. No, espere, viene más gente. Perfecto, tres hawaianas medianas a 30 soles cada una, ¿algo más? Sí, también una americana mediana para los niños, que no les gusta la piña. Una americana mediana, 28 soles, ¿desea algo para tomar, cupón al ajo? No, gracias, bebidas ya tenemos. Muy bien, ¿a qué dirección le enviamos? Calle Los Pinos, 256, urbanización El Recreo, es la casa de dos pisos con rejas negras. Calle Los Pinos, 256, urbanización El Recreo, ¿cuál será el medio de pago? Con tarjeta. ¿El motorizado lleva el POS? Sí, lleva el POS y acepta pizza Mastercard. Perfecto. ¿Le confío? Firmo el pedido. Tres pizzas hawaianas medianas, una americana mediana y el cupón bienvenida de 15 soles. El total es 113 soles. 113, de acuerdo. Su pedido llega en unos 45 minutos. Muchas gracias. A usted, que disfrute.",
+ "segmentos": [
+  {
+   "inicio": 1.42,
+   "fin": 5.62,
+   "texto": "Pizzería Tono, buenas noches, le saluda el área de pedidos."
+  },
+  {
+   "inicio": 7.16,
+   "fin": 13.88,
+   "texto": "Hola, buenas noches, es la primera vez que les pido, una amiga me los recomendó."
+  },
+  {
+   "inicio": 14.12,
+   "fin": 21.1,
+   "texto": "Qué bueno, bienvenida, como es su primer pedido, puede usar el cupón BIENVENIDA, que le descuenta 15 soles."
+  },
+  {
+   "inicio": 22.5,
+   "fin": 27.12,
+   "texto": "Ah, genial, entonces quiero dos pizzas hawaianas medianas."
+  },
+  {
+   "inicio": 27.88,
+   "fin": 29.58,
+   "texto": "Dos hawaianas medianas."
+  },
+  {
+   "inicio": 29.58,
+   "fin": 37.6,
+   "texto": "No, espere, viene más gente."
+  },
+  {
+   "inicio": 37.76,
+   "fin": 42.72,
+   "texto": "Perfecto, tres hawaianas medianas a 30 soles cada una, ¿algo más?"
+  },
+  {
+   "inicio": 43.8,
+   "fin": 48.56,
+   "texto": "Sí, también una americana mediana para los niños, que no les gusta la piña."
+  },
+  {
+   "inicio": 49.42,
+   "fin": 54.82,
+   "texto": "Una americana mediana, 28 soles, ¿desea algo para tomar, cupón al ajo?"
+  },
+  {
+   "inicio": 55.76,
+   "fin": 58.4,
+   "texto": "No, gracias, bebidas ya tenemos."
+  },
+  {
+   "inicio": 59.54,
+   "fin": 62.42,
+   "texto": "Muy bien, ¿a qué dirección le enviamos?"
+  },
+  {
+   "inicio": 63.78,
+   "fin": 72.54,
+   "texto": "Calle Los Pinos, 256, urbanización El Recreo, es la casa de dos pisos con rejas negras."
+  },
+  {
+   "inicio": 73.96,
+   "fin": 80.18,
+   "texto": "Calle Los Pinos, 256, urbanización El Recreo, ¿cuál será el medio de pago?"
+  },
+  {
+   "inicio": 81.18,
+   "fin": 82.06,
+   "texto": "Con tarjeta."
+  },
+  {
+   "inicio": 82.78,
+   "fin": 85.18,
+   "texto": "¿El motorizado lleva el POS?"
+  },
+  {
+   "inicio": 85.76,
+   "fin": 90.44,
+   "texto": "Sí, lleva el POS y acepta pizza Mastercard."
+  },
+  {
+   "inicio": 91.8,
+   "fin": 92.18,
+   "texto": "Perfecto."
+  },
+  {
+   "inicio": 93.06,
+   "fin": 93.76,
+   "texto": "¿Le confío?"
+  },
+  {
+   "inicio": 93.76,
+   "fin": 95.0,
+   "texto": "Firmo el pedido."
+  },
+  {
+   "inicio": 96.06,
+   "fin": 104.28,
+   "texto": "Tres pizzas hawaianas medianas, una americana mediana y el cupón bienvenida de 15 soles."
+  },
+  {
+   "inicio": 104.84,
+   "fin": 107.76,
+   "texto": "El total es 113 soles."
+  },
+  {
+   "inicio": 110.3,
+   "fin": 111.76,
+   "texto": "113, de acuerdo."
+  },
+  {
+   "inicio": 113.52,
+   "fin": 117.08,
+   "texto": "Su pedido llega en unos 45 minutos."
+  },
+  {
+   "inicio": 118.78,
+   "fin": 119.78,
+   "texto": "Muchas gracias."
+  },
+  {
+   "inicio": 120.52,
+   "fin": 121.92,
+   "texto": "A usted, que disfrute."
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4116.0,
+ "segundos": 10.06,
+ "duracion_audio": 122.84,
+ "seg_por_minuto": 4.91,
+ "glosario": "hotwords",
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "escalera_L3",
+ "clip": "t2_llamada_03_L3"
+}

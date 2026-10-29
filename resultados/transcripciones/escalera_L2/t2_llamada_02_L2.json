@@ -1,0 +1,40 @@
+{
+ "texto": "pizzería Tono, buenas tardes, buenas tardes, quisiera pedir una pizza para llevar a mi casa, claro, que pizza desea, espero una reunión de 4 personas, le recomiendo la suprema familiar, lleva pepperoni, jamón, champiñones, pimiento y aceituna, cuesta 52 soles, ya, una suprema familiar entonces, una suprema familiar, algo para acompañar, dos panes de ajo, por favor, dos panes al ajo, a 8 soles cada uno, y para tomar, una gaseosa de litro y medio, perfecto, tiene algún cupón de descuento, ya he pedido antes, así que creo que el de bienvenida no me vale, así es, el cupón de bienvenida es solo para el primer pedido, me da la dirección, por favor, gira un pizarro 418, departamento 3B, es un edificio de 5 pisos con una puerta verde, gira un pizarro 418, departamento 3B, como desea pagar, con yape, el motorizado le muestra el código para que yapee al llegar, le confirmo, una pizza suprema familiar, dos panes al ajo, y una gaseosa de litro y medio, serían 72 soles en total, 72, perfecto, llega antes de las 7, si, en unos 35 minutos estaría llegando, gracias, gracias a usted, buenas tardes,",
+ "segmentos": [
+  {
+   "inicio": 1.3,
+   "fin": 31.14,
+   "texto": "pizzería Tono, buenas tardes, buenas tardes, quisiera pedir una pizza para llevar a mi casa, claro, que pizza desea, espero una reunión de 4 personas, le recomiendo la suprema familiar, lleva pepperoni, jamón, champiñones, pimiento y aceituna, cuesta 52 soles, ya, una suprema familiar entonces,"
+  },
+  {
+   "inicio": 31.14,
+   "fin": 64.59,
+   "texto": "una suprema familiar, algo para acompañar, dos panes de ajo, por favor, dos panes al ajo, a 8 soles cada uno, y para tomar, una gaseosa de litro y medio, perfecto, tiene algún cupón de descuento, ya he pedido antes, así que creo que el de bienvenida no me vale, así es, el cupón de bienvenida es solo para el primer pedido,"
+  },
+  {
+   "inicio": 64.91,
+   "fin": 97.56,
+   "texto": "me da la dirección, por favor, gira un pizarro 418, departamento 3B, es un edificio de 5 pisos con una puerta verde, gira un pizarro 418, departamento 3B, como desea pagar, con yape, el motorizado le muestra el código para que yapee al llegar, le confirmo, una pizza suprema familiar, dos panes al ajo, y una gaseosa de litro y medio,"
+  },
+  {
+   "inicio": 97.7,
+   "fin": 118.35,
+   "texto": "serían 72 soles en total, 72, perfecto, llega antes de las 7, si, en unos 35 minutos estaría llegando, gracias, gracias a usted, buenas tardes,"
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4052.0,
+ "segundos": 8.26,
+ "duracion_audio": 120.87,
+ "seg_por_minuto": 4.1,
+ "glosario": "hotwords",
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "escalera_L2",
+ "clip": "t2_llamada_02_L2"
+}

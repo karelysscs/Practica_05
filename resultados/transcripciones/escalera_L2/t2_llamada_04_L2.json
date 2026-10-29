@@ -1,0 +1,145 @@
+{
+ "texto": "Becería Tono, buenas tardes, ¿en qué le ayudo? Buenas tardes, quiero hacer un pedido grande, porque es el cumpleaños de mi hermana. ¡Qué bien! ¡Feliz cumpleaños para ella! ¿Qué le gustaría pedir? Una americana familiar y una pepperoni familiar. Una americana familiar y una pepperoni familiar. Como son dos familiares, aplica el dúo familiar con 10 soles de descuento. Aunque, ahora que lo pienso, a mi hermana no le gusta mucho el pepperoni. Cambie la pepperoni por una hawaiana familiar, por favor. Claro, entonces quedan una americana familiar y una hawaiana familiar. Sigue aplicando el dúo familiar. Y dos gaseosas de litro y medio. Dos gaseosas de litro y medio. ¿Algo más? No, eso sería todo. Bueno, las pizzas pueden venir con una vela. Sí, le mandamos una vela de cortesía. ¡Qué lindo! ¡Gracias! La dirección es Manzana F, Lote 12, Urbanización Santa Inés. Manzana F, Lote 12, Urbanización Santa Inés. ¿Hay alguna referencia? Está frente a un parque. La casa tiene la puerta marrón. Perfecto. ¿Cómo va a pagar? Muy bien, le confirmo. Una americana familiar, una hawaiana familiar, dos gaseosas de litro y medio, menos diez soles del dúo familiar. El total es noventa y ocho soles. ¿Noventa y ocho? Perfecto. ¿A qué número hago el print? El motorizado le da el número cuando llegue. Estaría llegando en unos cincuenta minutos. Muchas gracias. Gracias a usted y feliz cumpleaños a su hermana.",
+ "segmentos": [
+  {
+   "inicio": 0.78,
+   "fin": 3.98,
+   "texto": "Becería Tono, buenas tardes, ¿en qué le ayudo?"
+  },
+  {
+   "inicio": 5.32,
+   "fin": 10.58,
+   "texto": "Buenas tardes, quiero hacer un pedido grande, porque es el cumpleaños de mi hermana."
+  },
+  {
+   "inicio": 11.38,
+   "fin": 15.18,
+   "texto": "¡Qué bien! ¡Feliz cumpleaños para ella! ¿Qué le gustaría pedir?"
+  },
+  {
+   "inicio": 16.44,
+   "fin": 20.4,
+   "texto": "Una americana familiar y una pepperoni familiar."
+  },
+  {
+   "inicio": 20.76,
+   "fin": 23.88,
+   "texto": "Una americana familiar y una pepperoni familiar."
+  },
+  {
+   "inicio": 24.14,
+   "fin": 29.62,
+   "texto": "Como son dos familiares, aplica el dúo familiar con 10 soles de descuento."
+  },
+  {
+   "inicio": 29.62,
+   "fin": 37.48,
+   "texto": "Aunque, ahora que lo pienso, a mi hermana no le gusta mucho el pepperoni."
+  },
+  {
+   "inicio": 38.3,
+   "fin": 42.12,
+   "texto": "Cambie la pepperoni por una hawaiana familiar, por favor."
+  },
+  {
+   "inicio": 42.96,
+   "fin": 47.26,
+   "texto": "Claro, entonces quedan una americana familiar y una hawaiana familiar."
+  },
+  {
+   "inicio": 47.9,
+   "fin": 49.72,
+   "texto": "Sigue aplicando el dúo familiar."
+  },
+  {
+   "inicio": 53.14,
+   "fin": 54.72,
+   "texto": "Y dos gaseosas de litro y medio."
+  },
+  {
+   "inicio": 55.38,
+   "fin": 57.76,
+   "texto": "Dos gaseosas de litro y medio. ¿Algo más?"
+  },
+  {
+   "inicio": 58.94,
+   "fin": 60.76,
+   "texto": "No, eso sería todo."
+  },
+  {
+   "inicio": 60.76,
+   "fin": 64.76,
+   "texto": "Bueno, las pizzas pueden venir con una vela."
+  },
+  {
+   "inicio": 65.54,
+   "fin": 69.54,
+   "texto": "Sí, le mandamos una vela de cortesía."
+  },
+  {
+   "inicio": 70.54,
+   "fin": 77.54,
+   "texto": "¡Qué lindo! ¡Gracias! La dirección es Manzana F, Lote 12, Urbanización Santa Inés."
+  },
+  {
+   "inicio": 78.54,
+   "fin": 85.54,
+   "texto": "Manzana F, Lote 12, Urbanización Santa Inés. ¿Hay alguna referencia?"
+  },
+  {
+   "inicio": 87.86,
+   "fin": 91.86,
+   "texto": "Está frente a un parque. La casa tiene la puerta marrón."
+  },
+  {
+   "inicio": 92.86,
+   "fin": 94.86,
+   "texto": "Perfecto. ¿Cómo va a pagar?"
+  },
+  {
+   "inicio": 94.86,
+   "fin": 109.66,
+   "texto": "Muy bien, le confirmo. Una americana familiar, una hawaiana familiar, dos gaseosas de litro y medio, menos diez soles del dúo familiar."
+  },
+  {
+   "inicio": 110.66,
+   "fin": 113.66,
+   "texto": "El total es noventa y ocho soles."
+  },
+  {
+   "inicio": 116.42,
+   "fin": 119.42,
+   "texto": "¿Noventa y ocho? Perfecto. ¿A qué número hago el print?"
+  },
+  {
+   "inicio": 120.42,
+   "fin": 124.42,
+   "texto": "El motorizado le da el número cuando llegue. Estaría llegando en unos cincuenta minutos."
+  },
+  {
+   "inicio": 125.42,
+   "fin": 128.54,
+   "texto": "Muchas gracias."
+  },
+  {
+   "inicio": 128.54,
+   "fin": 130.54,
+   "texto": "Gracias a usted y feliz cumpleaños a su hermana."
+  }
+ ],
+ "modelo": "large-v3",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 4180.0,
+ "segundos": 11.31,
+ "duracion_audio": 133.7,
+ "seg_por_minuto": 5.08,
+ "glosario": "hotwords",
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "escalera_L2",
+ "clip": "t2_llamada_04_L2"
+}

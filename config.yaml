@@ -14,7 +14,9 @@ asr:
   idioma: es
   beam_size: 5
   vad_filter: true
-  # Configuración que usa el motor por defecto (la mejor según los experimentos).
+  # Configuración que usa el motor por defecto, elegida por el acierto de la ficha y no por el WER
+  # (Colab, T4): con glosario el WER sube de 0.061 a 0.088, pero la ficha pasa de 75% a 83% de
+  # campos correctos, porque el glosario ayuda justo en las palabras que importan.
   defecto: {modelo: large-v3, dispositivo: cuda, precision: float16, glosario: true}
   # Configuración para la app en una laptop sin GPU.
   laptop: {modelo: small, dispositivo: cpu, precision: int8, glosario: true}

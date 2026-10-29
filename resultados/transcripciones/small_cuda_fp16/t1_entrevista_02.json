@@ -1,0 +1,115 @@
+{
+ "texto": "Hola, buenas tardes. ¿Cómo le comentamos por correo este entrevista para el puesto de líder técnico? El equipo trabaja con clientes de Estados Unidos, así que quiero empezar por el idioma. ¿Qué nivel de inglés tiene? Desamanzado. Tengo millones de áreas en inglés con clientes y también me hice un intercambio de seis meses en Canadá. Excelente, eso es clave para nosotros. ¿En cuánto fechas? ¿Cuándo podría incorporarse? Reconquedadle aviso a mi empleador actual, así que podría empezar a partir del 1º de diciembre. 1º de diciembre, ha notado. Cuénteme, ¿qué tecnologías domina? Trabajo, sobre todo, y Java y Spring Boot para el vacate. Para desplegar usamos Docker y todo está en A, B, D, E, S. Últimamente también he usado Kubernetes. Muy completo, ¿cuál es su puesto actual? Normalmente soy líder técnico de vacate en una FinTech, que estoy a cargo de un equipo de 8 personas. ¿Y cuántos años de experiencia tienen total? En tal son 7 años, empecé haciendo su porte, luego pasé a desarrollarlo y hace 2 años asumí el liderazgo del equipo. 7 años, muy bien. Por último, ¿cuál sería su pretensión salarial? Como el trabajo es con clientes del extranjero, estoy pidiendo 2.800 dólares mensuales. 2.800 dólares, lo voy a conversar con recursos humanos. ¿Tiene alguna duda sobre el puesto? Sí, el trabajo es remoto. Es remoto con una reunión presencial al mes en Lima. Perfecto, muchas gracias por la información. Gracias por su tiempo, le describiremos en los próximos días.",
+ "segmentos": [
+  {
+   "inicio": 1.14,
+   "fin": 7.14,
+   "texto": "Hola, buenas tardes. ¿Cómo le comentamos por correo este entrevista para el puesto de líder técnico?"
+  },
+  {
+   "inicio": 7.14,
+   "fin": 13.14,
+   "texto": "El equipo trabaja con clientes de Estados Unidos, así que quiero empezar por el idioma. ¿Qué nivel de inglés tiene?"
+  },
+  {
+   "inicio": 13.14,
+   "fin": 24.34,
+   "texto": "Desamanzado. Tengo millones de áreas en inglés con clientes y también me hice un intercambio de seis meses en Canadá."
+  },
+  {
+   "inicio": 24.34,
+   "fin": 31.34,
+   "texto": "Excelente, eso es clave para nosotros. ¿En cuánto fechas? ¿Cuándo podría incorporarse?"
+  },
+  {
+   "inicio": 31.34,
+   "fin": 38.34,
+   "texto": "Reconquedadle aviso a mi empleador actual, así que podría empezar a partir del 1º de diciembre."
+  },
+  {
+   "inicio": 38.34,
+   "fin": 44.34,
+   "texto": "1º de diciembre, ha notado. Cuénteme, ¿qué tecnologías domina?"
+  },
+  {
+   "inicio": 44.34,
+   "fin": 55.34,
+   "texto": "Trabajo, sobre todo, y Java y Spring Boot para el vacate. Para desplegar usamos Docker y todo está en A, B, D, E, S."
+  },
+  {
+   "inicio": 55.34,
+   "fin": 60.34,
+   "texto": "Últimamente también he usado Kubernetes."
+  },
+  {
+   "inicio": 60.34,
+   "fin": 63.34,
+   "texto": "Muy completo, ¿cuál es su puesto actual?"
+  },
+  {
+   "inicio": 63.34,
+   "fin": 72.94,
+   "texto": "Normalmente soy líder técnico de vacate en una FinTech, que estoy a cargo de un equipo de 8 personas."
+  },
+  {
+   "inicio": 72.94,
+   "fin": 75.94,
+   "texto": "¿Y cuántos años de experiencia tienen total?"
+  },
+  {
+   "inicio": 75.94,
+   "fin": 85.22,
+   "texto": "En tal son 7 años, empecé haciendo su porte, luego pasé a desarrollarlo y hace 2 años asumí el liderazgo del equipo."
+  },
+  {
+   "inicio": 85.22,
+   "fin": 90.22,
+   "texto": "7 años, muy bien. Por último, ¿cuál sería su pretensión salarial?"
+  },
+  {
+   "inicio": 90.22,
+   "fin": 97.85,
+   "texto": "Como el trabajo es con clientes del extranjero, estoy pidiendo 2.800 dólares mensuales."
+  },
+  {
+   "inicio": 97.85,
+   "fin": 103.85,
+   "texto": "2.800 dólares, lo voy a conversar con recursos humanos. ¿Tiene alguna duda sobre el puesto?"
+  },
+  {
+   "inicio": 103.85,
+   "fin": 106.85,
+   "texto": "Sí, el trabajo es remoto."
+  },
+  {
+   "inicio": 106.85,
+   "fin": 110.85,
+   "texto": "Es remoto con una reunión presencial al mes en Lima."
+  },
+  {
+   "inicio": 110.85,
+   "fin": 115.16,
+   "texto": "Perfecto, muchas gracias por la información."
+  },
+  {
+   "inicio": 115.16,
+   "fin": 118.16,
+   "texto": "Gracias por su tiempo, le describiremos en los próximos días."
+  }
+ ],
+ "modelo": "small",
+ "precision": "float16",
+ "dispositivo_pedido": "cuda",
+ "dispositivo_real": "cuda:0",
+ "gpus_cuda_visibles": 1,
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 852.0,
+ "segundos": 3.57,
+ "duracion_audio": 119.74,
+ "seg_por_minuto": 1.79,
+ "glosario": null,
+ "faster_whisper": "1.2.1",
+ "ctranslate2": "4.8.4",
+ "experimento": "small_cuda_fp16",
+ "clip": "t1_entrevista_02"
+}
