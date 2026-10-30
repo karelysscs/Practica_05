@@ -12,7 +12,7 @@ Reconocimiento de voz (ASR) aplicado a dos tareas, con **un solo motor**:
 Si no, queda como `sin_verificar`.
 
 - 📄 Documento del pipeline (público): [Pipeline en Notion](https://woozy-language-aa5.notion.site/Pipeline-De-la-voz-al-registro-40909547d9cd80eb84fafa0095515081) · copia en [docs/pipeline.md](docs/pipeline.md)
-- 🎬 Video: **[enlace — pendiente]**
+- 🎬 Video: [carpeta en Google Drive](https://drive.google.com/drive/folders/1EsaOx-Hj1My8TSOcmUoEwvnsj69SDBPr?usp=drive_link)
 
 ## Datos inventados y consentimiento
 
