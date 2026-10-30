@@ -11,7 +11,7 @@ Reconocimiento de voz (ASR) aplicado a dos tareas, con **un solo motor**:
 **Regla de oro:** un valor solo entra al registro si aparece literalmente en la transcripción.
 Si no, queda como `sin_verificar`.
 
-- 📄 Documento del pipeline (público): **[enlace a Notion — pendiente]** · borrador en [docs/pipeline.md](docs/pipeline.md)
+- 📄 Documento del pipeline (público): [Pipeline en Notion](https://woozy-language-aa5.notion.site/Pipeline-De-la-voz-al-registro-40909547d9cd80eb84fafa0095515081) · copia en [docs/pipeline.md](docs/pipeline.md)
 - 🎬 Video: **[enlace — pendiente]**
 
 ## Datos inventados y consentimiento
