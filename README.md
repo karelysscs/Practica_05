@@ -11,7 +11,7 @@ Reconocimiento de voz (ASR) aplicado a dos tareas, con **un solo motor**:
 **Regla de oro:** un valor solo entra al registro si aparece literalmente en la transcripción.
 Si no, queda como `sin_verificar`.
 
-- 📄 Documento del pipeline (público): **[enlace a Notion — pendiente]** · borrador en [docs/pipeline.md](docs/pipeline.md)
+- 📄 Documento del pipeline (público): [Pipeline en Notion](https://woozy-language-aa5.notion.site/Pipeline-De-la-voz-al-registro-40909547d9cd80eb84fafa0095515081) · copia en [docs/pipeline.md](docs/pipeline.md)
 - 🎬 Video: **[enlace — pendiente]**
 
 ## Datos inventados y consentimiento
@@ -63,7 +63,7 @@ activa la GPU T4 y ejecuta todo. Al final baja `resultados.zip` y descomprímelo
 
 ```bash
 python scripts/evaluar.py          # reglas
-python scripts/evaluar.py --llm    # reglas + LLM (necesita ANTHROPIC_API_KEY en .env, o la caché de resultados/llm/)
+python scripts/evaluar.py --llm    # reglas + LLM (necesita GEMINI_API_KEY en .env, o la caché de resultados/llm/)
 ```
 
 **3. App:**
@@ -136,6 +136,16 @@ Transcripción hecha en Google Colab con una **Tesla T4** (faster-whisper 1.2.1)
 | small CPU | 0.67 (0.47–0.82) | 0.89 | 0 |
 | small GPU | 0.63 (0.43–0.79) | 0.89 | 0 |
 
+**Reglas vs. LLM** (Gemini `gemini-3.5-flash-lite`, plan gratuito; caché en `resultados/llm/`)
+
+| Transcripción | Reglas | LLM | Sin verificar (reglas / LLM) |
+|---|---|---|---|
+| texto perfecto | 1.00 | 1.00 | 0 / 0 |
+| large-v3 float16 + glosario | 0.83 | 0.83 | 0 / 1 |
+
+Empatan en las fichas. El LLM inventó el año de una fecha que nunca se dijo (2024), así que el año lo pone el
+sistema desde `config.yaml`: es un ejemplo de por qué un valor no se acepta solo porque el modelo lo diga.
+
 - **El WER no predice si la ficha sirve.** Con glosario el WER sube (0.061 → 0.088) pero la ficha mejora
   (75% → 83%), porque el glosario acierta justo en las palabras que importan (tecnologías, puestos). Por eso
   el motor usa glosario por defecto: se eligió por la ficha, no por el WER.
@@ -153,6 +163,11 @@ Transcripción hecha en Google Colab con una **Tesla T4** (faster-whisper 1.2.1)
 | L1 nota de voz (Opus 12k) | 0.080 | 0.90 (0.70–0.97) | 3 | 3 | 0 | 3/3 |
 | L2 teléfono (300–3400 Hz, 8 kHz) | 0.090 | 0.85 (0.64–0.95) | 3 | 3 | 0 | 3/3 |
 | L3 = L1 + ruido a 5 dB SNR | 0.101 | 0.85 (0.64–0.95) | 4 | 4 | 0 | 3/4 |
+
+La tabla es con reglas. Campos correctos con LLM: texto perfecto 0.95, L0 0.95, L1 0.90, L2 0.85, L3 0.90. También
+atrapó todos los registros rotos, y su diagnóstico acertó en todos los niveles (4/4 en L3, donde las reglas sacaron
+3/4). A cambio, en la llamada 3 acertó el pedido pero citó "mejor que sean tres", que no nombra el producto: la
+verificación lo marcó `sin_verificar` en 3 de las 5 versiones del texto. Es un error del lado seguro.
 
 - "Roto" = el registro no se puede usar tal cual (algún campo mal extraído o un total mal dicho).
   "Atrapado" = la validación dio alerta o algún campo quedó `sin_verificar`.
@@ -182,4 +197,6 @@ tiene un solo clip, así que su F1 de inglés (0.33) no significa nada.
 | Herramienta | Uso |
 |---|---|
 | Claude Code (app de escritorio de Claude) | Ayudó a escribir guiones, código, pruebas y documentación. Revisé y entiendo cada módulo. |
-| (completar) | (servidores MCP conectados en Claude Code, una línea cada uno) |
+| Claude in Chrome (MCP) | Manejar Colab y Google Drive en mi navegador, con mi cuenta. |
+| Navegador integrado de Claude (MCP) | Revisar la app de Streamlit y crear los pull requests en GitHub. |
+| Gemini (API, plan gratuito) | No es un agente: es el modelo del camino LLM de extracción. |

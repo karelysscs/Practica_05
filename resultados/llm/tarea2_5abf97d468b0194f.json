@@ -1,0 +1,41 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "suprema",
+    "tamano": "familiar",
+    "cantidad": 1,
+    "evidencia": "una suprema familiar"
+   },
+   {
+    "producto": "pan al ajo",
+    "tamano": null,
+    "cantidad": 2,
+    "evidencia": "dos panes de ajo, por favor"
+   },
+   {
+    "producto": "gaseosa 1.5L",
+    "tamano": null,
+    "cantidad": 1,
+    "evidencia": "una gaseosa de litro y medio"
+   }
+  ],
+  "evidencia": "una suprema familiar, dos panes de ajo, por favor, una gaseosa de litro y medio"
+ },
+ "promocion": {
+  "valor": "ninguna",
+  "evidencia": "el de bienvenida no me vale"
+ },
+ "direccion_entrega": {
+  "valor": "gira un pizarro 418, departamento 3B",
+  "evidencia": "gira un pizarro 418, departamento 3B"
+ },
+ "metodo_pago": {
+  "valor": "yape",
+  "evidencia": "con yape"
+ },
+ "total_dicho": {
+  "valor": 72,
+  "evidencia": "serían 72 soles en total"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "hawaiana",
+    "tamano": "mediana",
+    "cantidad": 3,
+    "evidencia": "mejor que sean tres"
+   },
+   {
+    "producto": "americana",
+    "tamano": "mediana",
+    "cantidad": 1,
+    "evidencia": "también una americana mediana para los niños"
+   }
+  ],
+  "evidencia": "quiero dos pizzas hawaianas medianas Dos hawaianas medianas No, espere, mejor que sean tres... Sí, también una americana mediana para los niños"
+ },
+ "promocion": {
+  "valor": "cupon BIENVENIDA",
+  "evidencia": "puede usar el cupón BIENVENIDA"
+ },
+ "direccion_entrega": {
+  "valor": "Calle Los Pinos, 256, urbanización El Recreo",
+  "evidencia": "Calle Los Pinos, 256, urbanización El Recreo"
+ },
+ "metodo_pago": {
+  "valor": "tarjeta",
+  "evidencia": "Con tarjeta"
+ },
+ "total_dicho": {
+  "valor": 113.0,
+  "evidencia": "el total es 113 soles"
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "anios_experiencia": {
+  "valor": 5,
+  "evidencia": "Tengo cinco años de experiencia."
+ },
+ "ultimo_puesto": {
+  "valor": "especialista en experiencias",
+  "evidencia": "Mi último puesto fue especialista en experiencias."
+ },
+ "tecnologias": {
+  "valor": [
+   "Figma",
+   "Adobe",
+   "Miro",
+   "HTML"
+  ],
+  "evidencia": "Uso Figma para casi todo y antes trabajaba con Adobe. También uso Miro para los talleres con usuarios y sé lo básico de HTML"
+ },
+ "pretension_salarial": {
+  "valor": {
+   "monto": 6000,
+   "moneda": "PEN"
+  },
+  "evidencia": "Mi pretensión es de 6.000 soles."
+ },
+ "disponibilidad": {
+  "valor": "2 semanas",
+  "evidencia": "podría empezar en dos semanas."
+ },
+ "nivel_ingles": {
+  "valor": "avanzado",
+  "evidencia": "Avanzado."
+ }
+}

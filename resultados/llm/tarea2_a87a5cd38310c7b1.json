@@ -1,0 +1,35 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "pepperoni",
+    "tamano": "familiar",
+    "cantidad": 2,
+    "evidencia": "entonces mejor cambie la mediana por otra familiar, que sean dos de pepperoni familiares"
+   },
+   {
+    "producto": "gaseosa 1.5L",
+    "tamano": null,
+    "cantidad": 1,
+    "evidencia": "Una gaseosa de litro y medio"
+   }
+  ],
+  "evidencia": "Una pizza de pepperoni familiar y una pepperoni mediana... entonces mejor cambie la mediana por otra familiar, que sean dos de pepperoni familiares... Una gaseosa de litro y medio"
+ },
+ "promocion": {
+  "valor": "duo familiar",
+  "evidencia": "Sí, tenemos el dúo familiar, si lleva dos pizzas familiares o más, le descontamos 10 soles"
+ },
+ "direccion_entrega": {
+  "valor": "avenida América Sur 1245",
+  "evidencia": "avenida América Sur 1245, es una casa blanca, al costado de una farmacia"
+ },
+ "metodo_pago": {
+  "valor": "efectivo",
+  "evidencia": "Efectivo, voy a pagar con un billete de 7"
+ },
+ "total_dicho": {
+  "valor": 91.0,
+  "evidencia": "el total sería 91 soles"
+ }
+}

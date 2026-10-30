@@ -92,5 +92,5 @@ def test_producto_mal_oido_es_error_del_modelo():
 def test_config_sin_credenciales():
     """config.yaml no debe tener claves: esas van en .env."""
     texto = (ruta("verdad").parents[1] / "config.yaml").read_text(encoding="utf-8")
-    assert not re.search(r"sk-ant-\w|api_key\s*:", texto, re.IGNORECASE)
+    assert not re.search(r"AIza\w|api_key\s*:", texto, re.IGNORECASE)
     assert cfg()["llm"]["modelo"]

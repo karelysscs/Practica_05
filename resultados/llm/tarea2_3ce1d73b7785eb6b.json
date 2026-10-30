@@ -1,0 +1,35 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "pepperoni",
+    "tamano": "familiar",
+    "cantidad": 2,
+    "evidencia": "Que sean dos pepperoni familiares."
+   },
+   {
+    "producto": "gaseosa 1.5L",
+    "tamano": null,
+    "cantidad": 1,
+    "evidencia": "Sí, una gaseosa de litro y medio."
+   }
+  ],
+  "evidencia": "Que sean dos pepperoni familiares. ... Sí, una gaseosa de litro y medio."
+ },
+ "promocion": {
+  "valor": "duo familiar",
+  "evidencia": "el descuento del dúo familiar de diez soles."
+ },
+ "direccion_entrega": {
+  "valor": "avenida América Sur mil doscientos cuarenta y cinco",
+  "evidencia": "A la avenida América Sur mil doscientos cuarenta y cinco."
+ },
+ "metodo_pago": {
+  "valor": "efectivo",
+  "evidencia": "En efectivo."
+ },
+ "total_dicho": {
+  "valor": 91,
+  "evidencia": "El total es noventa y un soles."
+ }
+}

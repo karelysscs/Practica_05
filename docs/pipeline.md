@@ -1,7 +1,7 @@
 # Pipeline · De la voz al registro
 
-> Este documento es el borrador del pipeline. La versión que se entrega va en **Notion** (pública) y
-> se enlaza desde el README. Copia y pega cada sección en una página de Notion.
+> Práctica 05 (HW_05): de una grabación a un registro verificado, con un solo motor para dos tareas:
+> entrevistas de trabajo → ficha del candidato, y llamadas a una pizzería → pedido que se valida solo.
 
 ## 1. Qué corre una vez
 
@@ -23,7 +23,7 @@ flowchart TB
   C --> D["Normalizar<br/>números → dígitos"]
   D --> E{Extraer}
   E -->|reglas| F[Regex + vocabulario cerrado]
-  E -->|llm| G[Claude, JSON con valor + evidencia]
+  E -->|llm| G[Gemini, JSON con valor + evidencia]
   F --> H["Verificar: ¿la evidencia está<br/>en la transcripción y contiene el valor?"]
   G --> H
   H --> I[Registro + estado por campo]
@@ -34,7 +34,7 @@ flowchart TB
   K -->|no, campos sin verificar| N[error del modelo: revisar]
 ```
 
-Todo lo de la derecha de la caché corre en la laptop o en GitHub Actions, sin GPU.
+Todo lo que viene después de la caché corre en la laptop o en GitHub Actions, sin GPU.
 
 ## 3. Decisiones y opciones descartadas
 
@@ -48,6 +48,11 @@ Todo lo de la derecha de la caché corre en la laptop o en GitHub Actions, sin G
 | Normalizar números antes de comparar | "cuatro mil quinientos" y "4.500" son lo mismo; sin esto el WER castiga diferencias de formato | Comparar texto crudo |
 | Tarea 2: leer la confirmación del vendedor | Es el pedido final, ya con las correcciones; si no está, se recorre la llamada aplicando los cambios | Sumar todas las menciones (duplica lo que el vendedor repite) |
 | Diagnóstico error ASR vs. error del hablante | Si la cuenta no cuadra y todo está verificado, culpa de quien habló; si hay campos sin verificar, culpa del modelo | Marcar todo como error sin explicar |
+| large-v3 en GPU, float16 | WER 0.061, frente a 0.104 de small. Tarda 6.6 s por minuto de audio y usa ~4.9 GB de VRAM | small: 3.9 veces más rápido, pero la ficha baja a 63% de campos correctos |
+| GPU en vez de CPU | Con el mismo modelo small, 1.7 vs 48.9 s por minuto de audio: ~29 veces más rápido | CPU: viable solo para pocos audios |
+| Glosario activado | Se eligió por la ficha, no por el WER: el WER sube de 0.061 a 0.088, pero los campos correctos suben de 75% a 83%. Con 4 clips el IC de la diferencia de WER cruza 0 | Apagarlo porque el WER es mejor |
+| Reglas y Gemini, con la misma verificación | Empatan en las fichas (83%). Gemini diagnostica mejor con ruido (4/4 vs 3/4), pero inventó un año, y la verificación solo no lo detecta: por eso el año lo pone el sistema | Usar un solo camino sin comparar. Se usó el plan gratuito de Gemini porque una API de pago no era necesaria |
+| Validar con la carta y la suma | Atrapó los 3 totales mal dichos en todos los niveles, incluso con ruido a 5 dB | Confiar en el total dicho |
 
 ## 4. Qué NO debe hacer este sistema
 
@@ -60,4 +65,5 @@ Todo lo de la derecha de la caché corre en la laptop o en GitHub Actions, sin G
 | Herramienta | Para qué |
 |---|---|
 | Claude Code (app de escritorio) | Escribir guiones, código, pruebas y documentación con revisión mía |
-| (completar) servidores MCP conectados | (una línea cada uno) |
+| Claude in Chrome (MCP) | Manejar Colab y Google Drive en mi navegador con mi cuenta |
+| Navegador integrado de Claude (MCP) | Revisar la app de Streamlit y crear los pull requests en GitHub |

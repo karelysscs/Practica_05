@@ -1,0 +1,35 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "hawaiana",
+    "tamano": "mediana",
+    "cantidad": 3,
+    "evidencia": "tres hawaianas medianas a 30 soles cada una"
+   },
+   {
+    "producto": "americana",
+    "tamano": "mediana",
+    "cantidad": 1,
+    "evidencia": "una americana mediana para los niños"
+   }
+  ],
+  "evidencia": "tres hawaianas medianas a 30 soles cada una, ¿algo más? Sí, también una americana mediana para los niños"
+ },
+ "promocion": {
+  "valor": "cupon BIENVENIDA",
+  "evidencia": "cupón BIENVENIDA"
+ },
+ "direccion_entrega": {
+  "valor": "Calle Los Pinos, 256, urbanización El Recreo",
+  "evidencia": "Calle Los Pinos, 256, urbanización El Recreo"
+ },
+ "metodo_pago": {
+  "valor": "tarjeta",
+  "evidencia": "Con tarjeta."
+ },
+ "total_dicho": {
+  "valor": 113,
+  "evidencia": "El total es 113 soles."
+ }
+}

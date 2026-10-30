@@ -1,13 +1,15 @@
 """Camino 2 de extracción: un LLM devuelve JSON con valor + evidencia por campo.
 
-El modelo, el esfuerzo y el prompt están en config.yaml (llm). La clave va en .env
-(ANTHROPIC_API_KEY). Las respuestas se guardan en resultados/llm/ para no volver a pagar
-ni depender de internet al evaluar (y para que GitHub Actions use solo la caché).
+Usa la API de Gemini con su plan gratuito. El modelo y el prompt están en config.yaml (llm) y la
+clave va en .env (GEMINI_API_KEY). Las respuestas se guardan en resultados/llm/ para no gastar
+cuota ni depender de internet al evaluar (y para que GitHub Actions use solo la caché).
 """
 from __future__ import annotations
 
 import hashlib
 import json
+import re
+import time
 
 from .config import ruta
 
@@ -20,7 +22,9 @@ def _campo(tipo_valor) -> dict:
 
 
 def esquema_json(esquema: str, cfg: dict) -> dict:
-    nulo = lambda t: {"anyOf": [t, {"type": "null"}]}  # noqa: E731
+    def nulo(t: dict) -> dict:
+        return t | {"type": [t["type"], "null"]} | ({"enum": t["enum"] + [None]} if "enum" in t else {})
+
     if esquema == "tarea1":
         props = {
             "anios_experiencia": _campo(nulo({"type": "number"})),
@@ -52,18 +56,24 @@ def esquema_json(esquema: str, cfg: dict) -> dict:
 
 
 def _pedir(esquema: str, transcripcion: str, cfg: dict) -> dict:
-    import anthropic
+    from google import genai
     c = cfg["llm"]
     tarea = ("la ficha del candidato de esta entrevista de trabajo" if esquema == "tarea1"
              else "el pedido final de esta llamada a una pizzería (con las correcciones aplicadas)")
-    respuesta = anthropic.Anthropic().messages.create(
-        model=c["modelo"], max_tokens=c["max_tokens"], system=c["prompt_sistema"],
-        output_config={"effort": c["esfuerzo"], "format": {"type": "json_schema", "schema": esquema_json(esquema, cfg)}},
-        messages=[{"role": "user", "content": f"Llena {tarea}.\n\nTranscripción:\n{transcripcion}"}],
-    )
-    if respuesta.stop_reason == "refusal":
-        raise RuntimeError("El modelo rechazó la solicitud")
-    return json.loads(next(b.text for b in respuesta.content if b.type == "text"))
+    cliente = genai.Client()  # lee GEMINI_API_KEY del entorno
+    for intento in range(c["reintentos"] + 1):
+        try:
+            r = cliente.interactions.create(
+                model=c["modelo"],
+                input=f"{c['prompt_sistema']}\n\nLlena {tarea}.\n\nTranscripción:\n{transcripcion}",
+                response_format={"type": "text", "mime_type": "application/json",
+                                 "schema": esquema_json(esquema, cfg)},
+            )
+            return json.loads(r.output_text)
+        except Exception as e:  # 429: cuota por minuto del plan gratuito; 503: modelo saturado
+            if getattr(e, "status_code", None) not in (429, 503) or intento == c["reintentos"]:
+                raise
+            time.sleep(c["espera_reintento_s"])
 
 
 def extraer(esquema: str, transcripcion: str, cfg: dict) -> dict:
@@ -82,8 +92,10 @@ def extraer(esquema: str, transcripcion: str, cfg: dict) -> dict:
 
 def _a_formato_comun(esquema: str, crudo: dict, cfg: dict) -> dict:
     if esquema == "tarea1":
-        nivel = crudo["nivel_ingles"]
-        return crudo | {"nivel_ingles": nivel}
+        disp = crudo["disponibilidad"]
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", disp["valor"] or ""):  # el año no se dice: el modelo lo inventaría
+            disp["valor"] = f"{cfg['extraccion']['anio_referencia']}{disp['valor'][4:]}"
+        return crudo
     carta = cfg["carta"]
     items = crudo["items"]["valor"] or []
     for it in items:

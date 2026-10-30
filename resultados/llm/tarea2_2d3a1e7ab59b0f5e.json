@@ -1,0 +1,41 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "suprema",
+    "tamano": "familiar",
+    "cantidad": 1,
+    "evidencia": "Ya, una suprema familiar entonces"
+   },
+   {
+    "producto": "pan al ajo",
+    "tamano": null,
+    "cantidad": 2,
+    "evidencia": "Sí, dos panes de ajo, por favor"
+   },
+   {
+    "producto": "gaseosa 1.5L",
+    "tamano": null,
+    "cantidad": 1,
+    "evidencia": "Una gaseosa de litro y medio"
+   }
+  ],
+  "evidencia": "Una suprema familiar, ¿algo para acompañar? Sí, dos panes de ajo, por favor Dos panes al ajo, a ocho soles cada uno, ¿y para tomar? Una gaseosa de litro y medio"
+ },
+ "promocion": {
+  "valor": "ninguna",
+  "evidencia": "No, ninguno, ya he pedido antes, así que creo que el de bienvenida no me vale"
+ },
+ "direccion_entrega": {
+  "valor": "Girón Pizarro, 418, departamento 3B",
+  "evidencia": "Girón Pizarro, 418, departamento 3B, es un edificio de cinco pisos con una puerta verde"
+ },
+ "metodo_pago": {
+  "valor": "yape",
+  "evidencia": "Con Yape, por favor"
+ },
+ "total_dicho": {
+  "valor": 72.0,
+  "evidencia": "serían 72 soles en total"
+ }
+}

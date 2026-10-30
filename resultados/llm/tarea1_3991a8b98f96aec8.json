@@ -1,0 +1,35 @@
+{
+ "anios_experiencia": {
+  "valor": 1.5,
+  "evidencia": "Tengo un año y medio de prácticas profesionales en la agencia."
+ },
+ "ultimo_puesto": {
+  "valor": "practicante de desarrollo web",
+  "evidencia": "Mi último trabajo fue como practicante de desarrollo web en una agencia de marketing digital."
+ },
+ "tecnologias": {
+  "valor": [
+   "JavaScript",
+   "React",
+   "HTML",
+   "CSS",
+   "Git"
+  ],
+  "evidencia": "Con JavaScript, sobre todo con React. También manejo HTML y CSS, y uso Git para el control de versiones."
+ },
+ "pretension_salarial": {
+  "valor": {
+   "monto": 2200,
+   "moneda": "PEN"
+  },
+  "evidencia": "mi pretensión es de dos mil doscientos soles al mes."
+ },
+ "disponibilidad": {
+  "valor": "1 mes",
+  "evidencia": "Podría empezar en un mes, porque estoy terminando un curso que acaba a fin de mes."
+ },
+ "nivel_ingles": {
+  "valor": "basico",
+  "evidencia": "Sinceramente, mi inglés es básico."
+ }
+}

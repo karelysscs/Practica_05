@@ -1,0 +1,41 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "americana",
+    "tamano": "familiar",
+    "cantidad": 1,
+    "evidencia": "Una americana familiar"
+   },
+   {
+    "producto": "hawaiana",
+    "tamano": "familiar",
+    "cantidad": 1,
+    "evidencia": "Cambie la pepperoni por una hawaiana familiar, por favor."
+   },
+   {
+    "producto": "gaseosa 1.5L",
+    "tamano": null,
+    "cantidad": 2,
+    "evidencia": "Dos gaseosas de litro y medio."
+   }
+  ],
+  "evidencia": "Una americana familiar y una pepperoni familiar. Como son dos familiares, aplica el dúo familiar con 10 soles de descuento. Aunque, ahora que lo pienso, a mi hermana no le gusta mucho el pepperoni. Cambie la pepperoni por una hawaiana familiar, por favor. Y dos gaseosas de litro y medio."
+ },
+ "promocion": {
+  "valor": "duo familiar",
+  "evidencia": "Como son dos familiares, aplica el dúo familiar con 10 soles de descuento."
+ },
+ "direccion_entrega": {
+  "valor": "Manzana F, Lote 12, Urbanización Santa Inés",
+  "evidencia": "La dirección es Manzana F, Lote 12, Urbanización Santa Inés."
+ },
+ "metodo_pago": {
+  "valor": null,
+  "evidencia": ""
+ },
+ "total_dicho": {
+  "valor": 98,
+  "evidencia": "El total es noventa y ocho soles."
+ }
+}

@@ -1,8 +1,10 @@
 fuente,metodo,clips,acierto_global,ic_bajo,ic_alto,anios_experiencia,ultimo_puesto,tecnologias,pretension_salarial,disponibilidad,nivel_ingles,f1_macro_ingles,error_abs_anios,error_abs_pretension,sin_verificar
 asr:large_cpu_int8,reglas,1,1.0,0.61,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.333,0.0,0.0,0
 asr:large_cuda_fp16,reglas,4,0.75,0.551,0.88,1.0,0.25,0.5,1.0,1.0,0.75,0.889,0.0,0.0,0
+asr:large_cuda_fp16_glos,llm,4,0.833,0.641,0.933,1.0,0.5,0.75,1.0,1.0,0.75,0.889,0.0,0.0,1
 asr:large_cuda_fp16_glos,reglas,4,0.833,0.641,0.933,1.0,0.5,0.75,1.0,1.0,0.75,0.889,0.0,0.0,0
 asr:large_cuda_int8,reglas,4,0.792,0.595,0.908,1.0,0.5,0.5,1.0,1.0,0.75,0.889,0.0,0.0,0
 asr:small_cpu_int8,reglas,4,0.667,0.467,0.82,0.5,0.75,0.0,1.0,1.0,0.75,0.889,0.0,0.0,0
 asr:small_cuda_fp16,reglas,4,0.625,0.427,0.788,0.5,0.5,0.0,1.0,1.0,0.75,0.889,0.0,0.0,0
+referencia,llm,4,1.0,0.862,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0
 referencia,reglas,4,1.0,0.862,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0

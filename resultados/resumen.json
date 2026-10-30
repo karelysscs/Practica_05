@@ -49,6 +49,20 @@
       "diagnostico_acierto": "3/3"
     },
     {
+      "nivel": "referencia",
+      "metodo": "llm",
+      "clips": 4,
+      "wer": 0.0,
+      "acierto_campos": 0.95,
+      "ic_bajo": 0.764,
+      "ic_alto": 0.991,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    },
+    {
       "nivel": "L0",
       "metodo": "reglas",
       "clips": 4,
@@ -63,8 +77,36 @@
       "diagnostico_acierto": "3/3"
     },
     {
+      "nivel": "L0",
+      "metodo": "llm",
+      "clips": 4,
+      "wer": 0.047,
+      "acierto_campos": 0.95,
+      "ic_bajo": 0.764,
+      "ic_alto": 0.991,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    },
+    {
       "nivel": "L1",
       "metodo": "reglas",
+      "clips": 4,
+      "wer": 0.0799,
+      "acierto_campos": 0.9,
+      "ic_bajo": 0.699,
+      "ic_alto": 0.972,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    },
+    {
+      "nivel": "L1",
+      "metodo": "llm",
       "clips": 4,
       "wer": 0.0799,
       "acierto_campos": 0.9,
@@ -91,6 +133,20 @@
       "diagnostico_acierto": "3/3"
     },
     {
+      "nivel": "L2",
+      "metodo": "llm",
+      "clips": 4,
+      "wer": 0.0896,
+      "acierto_campos": 0.85,
+      "ic_bajo": 0.64,
+      "ic_alto": 0.948,
+      "rotos": 3,
+      "rotos_atrapados": 3,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "3/3"
+    },
+    {
       "nivel": "L3",
       "metodo": "reglas",
       "clips": 4,
@@ -103,6 +159,20 @@
       "rotos_no_atrapados": 0,
       "falsas_alarmas": 0,
       "diagnostico_acierto": "3/4"
+    },
+    {
+      "nivel": "L3",
+      "metodo": "llm",
+      "clips": 4,
+      "wer": 0.101,
+      "acierto_campos": 0.9,
+      "ic_bajo": 0.699,
+      "ic_alto": 0.972,
+      "rotos": 4,
+      "rotos_atrapados": 4,
+      "rotos_no_atrapados": 0,
+      "falsas_alarmas": 0,
+      "diagnostico_acierto": "4/4"
     }
   ]
 }
