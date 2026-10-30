@@ -248,12 +248,14 @@ with t_pedidos:
         falta("resultados/tarea2_resumen.csv")
     else:
         st.dataframe(bonito(res2), use_container_width=True, hide_index=True)
-        curva = res2[res2.nivel.str.startswith("L")].set_index("nivel")
+        niveles = res2[res2.nivel.str.startswith("L")]
+        curva = niveles[niveles.metodo == "reglas"].set_index("nivel")
         c1, c2 = st.columns(2)
         c1.markdown("**WER por nivel**")
         c1.line_chart(curva["wer"])
-        c2.markdown("**Acierto de campos por nivel**")
-        c2.line_chart(curva["acierto_campos"])
+        c2.markdown("**Campos correctos por nivel**")
+        c2.line_chart(niveles.pivot(index="nivel", columns="metodo", values="acierto_campos")
+                      .rename(columns=lambda m: "LLM" if m == "llm" else "Reglas"))
         st.subheader("Validación: registros rotos atrapados vs. no atrapados")
         st.bar_chart(curva[["rotos_atrapados", "rotos_no_atrapados", "falsas_alarmas"]].rename(columns=ETIQUETAS))
     esc = csv("tarea2_escalera.csv")
