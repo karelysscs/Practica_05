@@ -1,0 +1,35 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "pepperoni",
+    "tamano": "familiar",
+    "cantidad": 2,
+    "evidencia": "entonces quedan dos pizzas de pepperoni familiares"
+   },
+   {
+    "producto": "gaseosa 1.5L",
+    "tamano": null,
+    "cantidad": 1,
+    "evidencia": "una gaseosa de litro y medio"
+   }
+  ],
+  "evidencia": "Dos pizzas pepperoni familiares, una gaseosa de litro y medio"
+ },
+ "promocion": {
+  "valor": "duo familiar",
+  "evidencia": "con el dúo familiar"
+ },
+ "direccion_entrega": {
+  "valor": "avenida América Sur 1245",
+  "evidencia": "la avenida América Sur 1245"
+ },
+ "metodo_pago": {
+  "valor": "efectivo",
+  "evidencia": "Efectivo"
+ },
+ "total_dicho": {
+  "valor": 91,
+  "evidencia": "91 soles"
+ }
+}

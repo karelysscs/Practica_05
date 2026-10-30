@@ -61,11 +61,11 @@ carta:
     cupon BIENVENIDA: 15
   metodos_pago: [efectivo, yape, plin, tarjeta]
 
-# Extracción con LLM (camino 2). La clave va en .env como ANTHROPIC_API_KEY.
+# Extracción con LLM (camino 2). API de Gemini, plan gratuito. La clave va en .env como GEMINI_API_KEY.
 llm:
-  modelo: claude-opus-5-5
-  esfuerzo: low
-  max_tokens: 4000
+  modelo: gemini-3.5-flash-lite
+  reintentos: 3             # si responde 429 (límite por minuto) o 503 (modelo saturado)
+  espera_reintento_s: 30
   prompt_sistema: |
     Eres un asistente que llena formularios a partir de transcripciones de audio en español peruano.
     Reglas:

@@ -1,0 +1,35 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "hawaiana",
+    "tamano": "mediana",
+    "cantidad": 3,
+    "evidencia": "No, espere, mejor que sean tres. Viene más gente de la que pensaba."
+   },
+   {
+    "producto": "americana",
+    "tamano": "mediana",
+    "cantidad": 1,
+    "evidencia": "Sí, también una americana mediana para los niños, que no les gusta la piña."
+   }
+  ],
+  "evidencia": "Entonces quiero dos pizzas hawaianas medianas… No, espere, mejor que sean tres. Viene más gente de la que pensaba. Sí, también una americana mediana para los niños, que no les gusta la piña."
+ },
+ "promocion": {
+  "valor": "cupon BIENVENIDA",
+  "evidencia": "Como es su primer pedido, puede usar el cupón BIENVENIDA, que le descuenta quince soles."
+ },
+ "direccion_entrega": {
+  "valor": "Calle Los Pinos doscientos cincuenta y seis, urbanización El Recreo",
+  "evidencia": "Calle Los Pinos doscientos cincuenta y seis, urbanización El Recreo."
+ },
+ "metodo_pago": {
+  "valor": "tarjeta",
+  "evidencia": "Con tarjeta. ¿El motorizado lleva el POS?"
+ },
+ "total_dicho": {
+  "valor": 113.0,
+  "evidencia": "El total es ciento trece soles."
+ }
+}

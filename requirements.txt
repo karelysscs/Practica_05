@@ -4,7 +4,7 @@ ctranslate2==4.8.4
 # faster-whisper 1.2.1 usa av.open(metadata_errors=...), que PyAV 16+ ya no acepta
 av==15.1.0
 streamlit==1.66.1
-anthropic==2.3.0
+google-genai==2.34.0
 PyYAML==6.0.3
 python-dotenv==1.2.4
 jiwer==4.0.0

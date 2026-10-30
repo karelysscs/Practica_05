@@ -1,0 +1,41 @@
+{
+ "items": {
+  "valor": [
+   {
+    "producto": "americana",
+    "tamano": "familiar",
+    "cantidad": 1,
+    "evidencia": "una americana familiar"
+   },
+   {
+    "producto": "hawaiana",
+    "tamano": "familiar",
+    "cantidad": 1,
+    "evidencia": "una hawaiana familiar"
+   },
+   {
+    "producto": "gaseosa 1.5L",
+    "tamano": null,
+    "cantidad": 2,
+    "evidencia": "dos gaseosas de litro y medio"
+   }
+  ],
+  "evidencia": "una americana familiar y una hawaiana familiar. Sigue aplicando el dúo familiar. Perfecto. Y dos gaseosas de litro y medio."
+ },
+ "promocion": {
+  "valor": "duo familiar",
+  "evidencia": "aplica el dúo familiar, con diez soles de descuento"
+ },
+ "direccion_entrega": {
+  "valor": "manzana F, lote doce, urbanización Santa Inés",
+  "evidencia": "manzana F, lote doce, urbanización Santa Inés"
+ },
+ "metodo_pago": {
+  "valor": "plin",
+  "evidencia": "Con Plin."
+ },
+ "total_dicho": {
+  "valor": 98.0,
+  "evidencia": "El total es noventa y ocho soles."
+ }
+}

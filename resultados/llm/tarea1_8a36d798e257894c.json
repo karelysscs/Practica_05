@@ -1,0 +1,35 @@
+{
+ "anios_experiencia": {
+  "valor": 7,
+  "evidencia": "En total son siete años."
+ },
+ "ultimo_puesto": {
+  "valor": "líder técnico de backend",
+  "evidencia": "Usualmente soy líder técnico de backend en una fintech."
+ },
+ "tecnologias": {
+  "valor": [
+   "Java",
+   "Spring Boot",
+   "Docker",
+   "AWS",
+   "Kubernetes"
+  ],
+  "evidencia": "Trabajo sobre todo en Java y Spring Boot para el backend. Para desplegar usamos Docker y todo está en AWS. Últimamente también he usado Kubernetes."
+ },
+ "pretension_salarial": {
+  "valor": {
+   "monto": 2800,
+   "moneda": "USD"
+  },
+  "evidencia": "estoy pidiendo dos mil ochocientos dólares mensuales."
+ },
+ "disponibilidad": {
+  "valor": "2024-12-01",
+  "evidencia": "podría empezar a partir del primero de diciembre."
+ },
+ "nivel_ingles": {
+  "valor": "avanzado",
+  "evidencia": "Tengo reuniones diarias en inglés con clientes y también me hice un intercambio de seis meses en Canadá."
+ }
+}

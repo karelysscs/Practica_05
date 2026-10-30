@@ -1,0 +1,34 @@
+{
+ "anios_experiencia": {
+  "valor": 3,
+  "evidencia": "En total tengo tres años de experiencia trabajando en el área."
+ },
+ "ultimo_puesto": {
+  "valor": "analista de datos junior",
+  "evidencia": "Mi último puesto fue analista de datos junior en una empresa de retail."
+ },
+ "tecnologias": {
+  "valor": [
+   "Python",
+   "SQL",
+   "Power BI",
+   "Excel"
+  ],
+  "evidencia": "Principalmente Python para limpiar los datos, SQL para consultar la base de datos y Power BI para los tableros. También Excel, pero eso ya es lo básico."
+ },
+ "pretension_salarial": {
+  "valor": {
+   "monto": 4500,
+   "moneda": "PEN"
+  },
+  "evidencia": "Estoy buscando cuatro mil quinientos soles mensuales."
+ },
+ "disponibilidad": {
+  "valor": "inmediata",
+  "evidencia": "Puedo empezar de inmediato, porque en este momento no estoy trabajando."
+ },
+ "nivel_ingles": {
+  "valor": "intermedio",
+  "evidencia": "Tengo un nivel intermedio."
+ }
+}

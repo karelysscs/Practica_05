@@ -239,7 +239,7 @@ def tarea2(metodos: list[str], resumen: dict):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--llm", action="store_true", help="incluir el camino LLM (necesita ANTHROPIC_API_KEY o caché)")
+    p.add_argument("--llm", action="store_true", help="incluir el camino LLM (necesita GEMINI_API_KEY o caché)")
     a = p.parse_args()
     metodos = ["reglas"] + (["llm"] if a.llm else [])
     ruta("resultados").mkdir(parents=True, exist_ok=True)
