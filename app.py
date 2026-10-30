@@ -46,6 +46,77 @@ def transcripcion_cache(clip):
     return None
 
 
+# Lo que ve la persona: los nombres internos (sin tildes) no cambian, solo cómo se muestran.
+ETIQUETAS = {
+    "clip": "Clip", "items": "Ítems", "promocion": "Promoción", "descuento": "Descuento (S/)",
+    "direccion_entrega": "Dirección de entrega", "metodo_pago": "Método de pago", "total_dicho": "Total dicho",
+    "total_correcto": "Total correcto", "cuadra": "¿Cuadra?", "trampa_cambio_pedido": "Trampa: cambio de pedido",
+    "trampa_total_mal": "Trampa: total mal dicho", "trampa_direccion_digitos": "Trampa: dirección con números",
+    "anios_experiencia": "Años de experiencia", "ultimo_puesto": "Último puesto", "tecnologias": "Tecnologías",
+    "pretension_salarial": "Pretensión salarial", "moneda": "Moneda", "disponibilidad": "Disponibilidad",
+    "nivel_ingles": "Nivel de inglés", "trampas": "Trampas", "experimento": "Experimento", "modelo": "Modelo",
+    "dispositivo_real": "Dispositivo real", "precision": "Precisión", "glosario": "Glosario", "clips": "Clips",
+    "wer": "WER", "wer_ic_bajo": "WER (IC bajo)", "wer_ic_alto": "WER (IC alto)", "cer": "CER",
+    "seg_por_minuto": "Segundos por min de audio", "vram_pico_mb": "VRAM pico (MB)", "fuente": "Transcripción",
+    "metodo": "Método", "acierto_global": "Campos correctos", "ic_bajo": "IC bajo", "ic_alto": "IC alto",
+    "f1_macro_ingles": "F1 macro de inglés", "error_abs_anios": "Error absoluto en años",
+    "error_abs_pretension": "Error absoluto en pretensión", "sin_verificar": "Sin verificar", "nivel": "Nivel",
+    "acierto_campos": "Campos correctos", "rotos": "Registros rotos", "rotos_atrapados": "Rotos atrapados",
+    "rotos_no_atrapados": "Rotos no atrapados", "falsas_alarmas": "Falsas alarmas",
+    "diagnostico_acierto": "Diagnóstico correcto", "campos_ok": "Campos correctos", "suma_calculada": "Suma calculada",
+    "diagnostico": "Diagnóstico", "causa_real": "Causa real", "roto": "Roto", "atrapado": "Atrapado",
+    "detalle": "Detalle", "snr_db_medida": "SNR medida (dB)", "campo": "Campo", "valor": "Valor", "estado": "Estado",
+    "evidencia": "Evidencia",
+}
+VALORES = {
+    "si": "sí", "duo familiar": "dúo familiar", "cupon BIENVENIDA": "cupón BIENVENIDA", "basico": "básico",
+    "yape": "Yape", "plin": "Plin", "PEN": "soles", "USD": "dólares", "error_hablante": "error de quien habló",
+    "error_asr": "error del modelo", "sin_verificar": "sin verificar", "vacio": "vacío", "llm": "LLM",
+    "referencia": "texto perfecto", True: "sí", False: "no",
+}
+
+
+def texto_items(items) -> str:
+    """Lista de ítems en lenguaje normal: '2 pepperoni familiar a S/ 46; 1 gaseosa 1.5L a S/ 9'."""
+    if isinstance(items, str):
+        items = json.loads(items)
+    partes = []
+    for i in items:
+        nombre = " ".join(x for x in (i["producto"], i.get("tamano")) if x)
+        precio = i.get("precio_unitario")
+        partes.append(f"{i['cantidad']} {nombre}" + (f" a S/ {precio}" if precio is not None else ""))
+    return "; ".join(partes)
+
+
+def bonito(df: pd.DataFrame) -> pd.DataFrame:
+    """Tabla lista para mostrar: nombres de columna y valores con ortografía correcta."""
+    d = df.copy()
+    for c in d.columns:
+        if c == "items":
+            d[c] = d[c].map(texto_items)
+        elif c == "tecnologias" and not pd.api.types.is_numeric_dtype(d[c]):
+            d[c] = d[c].str.replace("|", ", ", regex=False)
+        elif d[c].dtype == bool or not pd.api.types.is_numeric_dtype(d[c]):
+            d[c] = d[c].map(lambda v: VALORES.get(v, v))
+    return d.rename(columns=ETIQUETAS)
+
+
+def valor_legible(campo, v) -> str:
+    """Valor de un campo extraído (pestaña Probar), como lo leería una persona."""
+    if campo == "items" and isinstance(v, list):
+        return texto_items(v)
+    if campo == "promocion" and isinstance(v, dict):
+        nombre = VALORES.get(v["nombre"], v["nombre"])
+        return f"{nombre} (−S/ {v['descuento']})" if v["descuento"] else nombre
+    if campo == "pretension_salarial" and isinstance(v, dict):
+        return f"{v['monto']} {VALORES[v['moneda']]}"
+    if campo == "tecnologias" and isinstance(v, list):
+        return ", ".join(v)
+    if campo == "direccion_entrega" and isinstance(v, str) and v != "sin_verificar":
+        return v.title()
+    return "—" if v is None else str(VALORES.get(v, v))
+
+
 def falta(nombre):
     st.info(f"Todavía no hay `{nombre}`. Corre el notebook de Colab y luego `python scripts/evaluar.py`.")
 
@@ -114,11 +185,13 @@ with t_corpus:
         st.markdown(f"**Transcripción del modelo** ({r['experimento'] if r else 'sin caché'})")
         st.text_area("asr", r["texto"] if r else "", height=320, label_visibility="collapsed")
     st.markdown("**Respuestas correctas de este clip**")
-    st.dataframe(verdad[verdad["clip"] == clip].T.rename(columns=lambda _: "valor"), use_container_width=True)
+    st.dataframe(bonito(verdad[verdad["clip"] == clip]).T.rename(columns=lambda _: "Valor").astype(str),
+                 use_container_width=True)
     st.markdown("**Distribución de los campos en el corpus**")
     cols = [c for c in verdad.columns if c not in ("clip", "items", "trampas")]
-    st.dataframe(pd.DataFrame({c: verdad[c].value_counts().to_dict() for c in cols}).T.fillna(""),
-                 use_container_width=True)
+    distribucion = {ETIQUETAS.get(c, c): verdad[c].map(lambda v: VALORES.get(v, v)).value_counts().to_dict()
+                    for c in cols if c != "tecnologias"}
+    st.dataframe(pd.DataFrame(distribucion).T.fillna("").astype(str), use_container_width=True)
 
 # ───────────────────────────────────────────────────────── 3
 with t_resultados:
@@ -127,7 +200,7 @@ with t_resultados:
     if asr is None:
         falta("resultados/tarea1_asr_resumen.csv")
     else:
-        st.dataframe(asr, use_container_width=True, hide_index=True)
+        st.dataframe(bonito(asr), use_container_width=True, hide_index=True)
         c1, c2 = st.columns(2)
         c1.markdown("**Segundos de cómputo por minuto de audio** (menos es mejor)")
         c1.bar_chart(asr.set_index("experimento")["seg_por_minuto"])
@@ -151,7 +224,7 @@ with t_resultados:
     if reg is None:
         falta("resultados/tarea1_registro_resumen.csv")
     else:
-        st.dataframe(reg, use_container_width=True, hide_index=True)
+        st.dataframe(bonito(reg), use_container_width=True, hide_index=True)
         det = csv("tarea1_registro.csv")
         asr_det = det[det.fuente != "referencia"] if det is not None else None
         if asr_det is not None and len(asr_det):
@@ -169,12 +242,12 @@ with t_pedidos:
                 "L3 = L1 + ruido de fondo")
     deg = csv("degradacion.csv")
     if deg is not None:
-        st.dataframe(deg[deg.nivel == "L3"], use_container_width=True, hide_index=True)
+        st.dataframe(bonito(deg[deg.nivel == "L3"]), use_container_width=True, hide_index=True)
     res2 = csv("tarea2_resumen.csv")
     if res2 is None:
         falta("resultados/tarea2_resumen.csv")
     else:
-        st.dataframe(res2, use_container_width=True, hide_index=True)
+        st.dataframe(bonito(res2), use_container_width=True, hide_index=True)
         curva = res2[res2.nivel.str.startswith("L")].set_index("nivel")
         c1, c2 = st.columns(2)
         c1.markdown("**WER por nivel**")
@@ -182,12 +255,12 @@ with t_pedidos:
         c2.markdown("**Acierto de campos por nivel**")
         c2.line_chart(curva["acierto_campos"])
         st.subheader("Validación: registros rotos atrapados vs. no atrapados")
-        st.bar_chart(curva[["rotos_atrapados", "rotos_no_atrapados", "falsas_alarmas"]])
+        st.bar_chart(curva[["rotos_atrapados", "rotos_no_atrapados", "falsas_alarmas"]].rename(columns=ETIQUETAS))
     esc = csv("tarea2_escalera.csv")
     if esc is not None:
         st.subheader("Detalle por llamada")
-        st.dataframe(esc[["nivel", "metodo", "clip", "wer", "campos_ok", "suma_calculada", "total_dicho",
-                          "total_correcto", "diagnostico", "causa_real", "roto", "atrapado", "sin_verificar"]],
+        st.dataframe(bonito(esc[["nivel", "metodo", "clip", "wer", "campos_ok", "suma_calculada", "total_dicho",
+                                 "total_correcto", "diagnostico", "causa_real", "roto", "atrapado", "sin_verificar"]]),
                      use_container_width=True, hide_index=True)
 
 # ───────────────────────────────────────────────────────── 5
@@ -224,8 +297,9 @@ with t_probar:
             if r.get("dispositivo"):
                 st.caption(f"Transcrito en {r['dispositivo']} en {r['segundos']} s")
                 st.text_area("Transcripción obtenida", r["transcripcion"], height=150)
-            filas = [{"campo": k, "valor": json.dumps(v, ensure_ascii=False) if not isinstance(v, str) else v,
-                      "estado": r["estados"][k], "evidencia": r["campos"][k].get("evidencia", "")}
+            filas = [{"Campo": ETIQUETAS.get(k, k), "Valor": valor_legible(k, v),
+                      "Estado": VALORES.get(r["estados"][k], r["estados"][k]),
+                      "Evidencia": r["campos"][k].get("evidencia", "")}
                      for k, v in r["campos_verificados"].items()]
             st.dataframe(pd.DataFrame(filas), use_container_width=True, hide_index=True)
             if "validacion" in r:
